@@ -14,6 +14,8 @@ $gray_blue : #eaf2f4;
 header{
 
   background: $gray_blue;
+  
+
 
   #header_in{
     padding-top: 10px;
@@ -29,25 +31,28 @@ header{
     }
     
     .sp_navi {
-        
-    div.logo.a {
-
-      text-align:center;
       
-    .clearfix::after {
-        content: '';
-        display: block;
-        clear: both;
-            }
+
+        div.logo.a {
+
+            text-align:center;
         }
-        
+      
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+            }
+    }
+    
     div.sp_navi_li{
         text-align:center;
     }
         
-      }
-    }
+}
 //max-width: 550px end
+
+
 
 //  .menu_sp_toggle start
   .menu_sp_toggle {

@@ -11,11 +11,11 @@ header {
       display: none; }
     header .sp_navi div.logo.a {
       text-align: center; }
-      header .sp_navi div.logo.a .clearfix::after {
-        content: '';
-        display: block;
-        clear: both; }
-    header .sp_navi div.sp_navi_li {
+    header .sp_navi .clearfix::after {
+      content: '';
+      display: block;
+      clear: both; }
+    header div.sp_navi_li {
       text-align: center; } }
   header .menu_sp_toggle {
     width: 180px;
