@@ -10,12 +10,12 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
 $blue1 : #42b9d0;
 $blue2 : #339fd1;
 $gray_blue : #eaf2f4;
+
+// header start
 header{
 
   background: $gray_blue;
   
-
-
   #header_in{
     padding-top: 10px;
     padding-bottom:4px;
@@ -47,10 +47,10 @@ header{
     div.sp_navi_li{
         text-align:center;
     }
+    
+  }
 }
 //max-width: 550px end
-
-
 
 //  .menu_sp_toggle start
   .menu_sp_toggle {
@@ -114,8 +114,10 @@ header{
         }
       }
     }
-  }
   //min-width: 551px end
 }
-// header
+// header end
 
+// main start
+
+// main end
