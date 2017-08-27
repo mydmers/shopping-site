@@ -30,40 +30,46 @@
 </head>
 <body>
 <header>
+  
   <div id="header_in" class="container">
     <div class="row">
-      <div class="two columns logo">
-        <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="shopping-site" srcset="images/top/logo@2x.png 2x" /></a></h1>
+      <div class="six columns">
+          <a href="top.html">
+            <img class="u-max-full-width" src="images/top/logo.png" alt="shopping-site" srcset="images/top/logo@2x.png 2x" />
+          </a>
       </div>
-      <div class="three columns"></div>
       
-      <div class="seven columns navi">
+      <div class="six columns navi">
+
+        <!-- sp_navi start-->        
         <div class="sp_navi">
-          <img id="sp_navi_btn" class="u-max-full-width" src="images/top/sp_navi.png" alt="sp_navi" srcset="images/top/sp_navi@2x.png 2x" />
-          <ul class="sp_navi_li">
-            <li><a href="menu_login.png">LOGIN</a></li>
-            <li><a href="menu_cart.png">CART</a></li>
-            <li><a href="menu_mypage.png">MY PAGE</a></li>
-            <li><a href="menu_guide.png">SHOPPING GUIDE</a></li>
-            <li><a href="facebook.png">SHOPPING GUIDE</a></li>
-            <li><a href="insta.png">SHOPPING GUIDE</a></li>
+          <div class="sp_navi_li">
+            <img class="u-max-full-width" src="images/top_sp/fb.png" alt="fb_navi" srcset="images/top_sp/fb@2x.png 2x" />
+            <img class="u-max-full-width" src="images/top_sp/insta.png" alt="insta_navi" srcset="images/top_sp/insta@2x.png 2x" />
+            <img id="menu_sp" class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="menu_icon_navi" srcset="images/top_sp/menu_icon@2x.png 2x" />
+          </div>
+          <ul class="menu_sp_toggle">
+            <li><a href="">LOGIN</a></li>
+            <li><a href="">CART</a></li>
+            <li><a href="">MY PAGE</a></li>
           </ul>
         </div>
-        <!-- sp_navi -->
+        <!-- sp_navi end-->
 
+        <!-- pc_navi start-->
         <div class="pc_navi">
 
           <ul class="pc_navi_li">
-            <li><a href="menu_login.png">LOGIN</a></li>
-            <li><a href="menu_cart.png">CART</a></li>
-            <li><a href="menu_mypage.png">MY PAGE</a></li>
-            <li><a href="menu_guide.png">SHOPPING GUIDE</a></li>
-            <li><a href="facebook.png">SHOPPING GUIDE</a></li>
-            <li><a href="insta.png">SHOPPING GUIDE</a></li>
+            <li><a href="">LOGIN</a></li>
+            <li><a href="">CART</a></li>
+            <li><a href="">MY PAGE</a></li>
+            <li><a href="">SHOPPING GUIDE</a></li>
+            <li><a href=""><img src="images/top/facebook.png" border="0"></a></li>
+            <li><a href=""><img src="images/top/insta.png" border="0"></a></li>
           </ul>
 
         </div>
-        <!-- pc_navi -->
+        <!-- pc_navi end-->
 
       </div>
     </div>
@@ -79,5 +85,18 @@
     <footer>
         
     </footer>
+  <!-- //footer -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+  $(function(){
+    $(document).ready(function(){
+      $("#menu_sp").click(function(){
+       $(".menu_sp_toggle").slideToggle();
+      });
+    });
+  });
+</script>
 </body>
 </html>
