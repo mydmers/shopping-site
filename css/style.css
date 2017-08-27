@@ -64,5 +64,15 @@ header {
         padding-right: 10px; }
       .pc_navi_li li a:hover {
         color: #42b9d0; } }
+@media (max-width: 550px) {
+  #main .pc_navi {
+    display: none; }
+  #main .cover_area {
+    background-size: cover; } }
+@media (min-width: 551px) {
+  #main .sp_navi {
+    display: none; }
+  #main .cover_area {
+    background-size: cover; } }
 
 /*# sourceMappingURL=style.css.map */

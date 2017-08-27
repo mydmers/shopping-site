@@ -122,7 +122,13 @@ header{
 #main{
   //max-width: 550px start
   @media (max-width: 550px) {
- 
+    .pc_navi{
+      display: none;
+    }
+    .cover_area{
+      background-size:cover;
+    }
+    
 }
 //max-width: 550px end
 
@@ -130,7 +136,14 @@ header{
   
 //min-width: 551px start
   @media (min-width: 551px) {
-
+    .sp_navi{
+      display: none;
+    }
+    
+    .cover_area{
+      background-size:cover;
+    }
+   
     }
   //min-width: 551px end
 }
