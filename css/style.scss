@@ -125,9 +125,11 @@ header{
     .pc_navi{
       display: none;
     }
-    .cover_area{
-      background-size:cover;
+    
+    img.cover_area{
+      width:100%;
     }
+    
     .nnew_items_list {
       display:inline;
     }
@@ -142,8 +144,8 @@ header{
       display: none;
     }
     
-    .cover_area{
-      background-size:cover;
+    img.cover_area{
+      width:100%;
     }
    
     }
