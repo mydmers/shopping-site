@@ -68,7 +68,9 @@ header {
   #main .pc_navi {
     display: none; }
   #main .cover_area {
-    background-size: cover; } }
+    background-size: cover; }
+  #main .nnew_items_list {
+    display: inline; } }
 @media (min-width: 551px) {
   #main .sp_navi {
     display: none; }
