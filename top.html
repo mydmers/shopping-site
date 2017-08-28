@@ -18,20 +18,39 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 
   <!------------------------ Favicon ------------------------>
   <link rel="icon" type="image/png" href="images/favicon.png">
   
+  <!------------------------ ハンバーガーメニュー ------------------------> 
+   <script>
+   $(function(){
+     $(document).ready(function(){
+        $("#menu_sp").click(function(){
+        $(".menu_sp_toggle").slideToggle();
+       });
+     });
+    });
+  </script>
+  
   <!------------------------ Owl Carousel ------------------------>
-    <!-- Owl Carousel CSS -->
-      <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-      <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-    <!-- jQuery -->
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- Owl Carousel JS -->
-      <script src="owlcarousel/owl.carousel.min.js"></script>
-    <!-- Owl Carouselを動作させるために追加 -->
-      <script src="test-carousel.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function(){
+     $('.owl-carousel').owlCarousel(
+        {
+          loop: true,
+          nav: false,
+          dots: true,
+          items: 1,
+          autoplay: true,
+        }
+    );
+  }); 
+  </script>
 
 </head>
 
@@ -94,11 +113,11 @@
 <div id="main" class="row">
 <!------------------------ submain start------------------------>
 <div class="submain nine columns">
-  <div class="owl-carousel owl-theme cover_area">
-    <div><img class="cover_area" src="images/top/ca_banner.jpg" ></img></div>
-    <div><img class="cover_area" src="images/top/ca_banner.jpg" ></img></div>
-    <div><img class="cover_area" src="images/top/ca_banner.jpg" ></img></div>
-    <div><img class="cover_area" src="images/top/ca_banner.jpg" ></img></div>
+  <div class="owl-carousel">
+    <div><img  src="images/top/ca_banner.jpg" ></img></div>
+    <div><img  src="images/top/ca_banner.jpg" ></img></div>
+    <div><img  src="images/top/ca_banner.jpg" ></img></div>
+    <div><img  src="images/top/ca_banner.jpg" ></img></div>
   </div>
     
   <div id="new_items">
@@ -197,18 +216,6 @@
 <!------------------------ sidebar end------------------------>  
 </div>
 <!------------------------ main end------------------------>
-
-<!------------------------ script start------------------------>
-<script>
-  $(function(){
-    $(document).ready(function(){
-      $("#menu_sp").click(function(){
-       $(".menu_sp_toggle").slideToggle();
-      });
-    });
-  });
-</script>
-<!------------------------ script end------------------------>
 </body>
 <!------------------------ body end------------------------>
 </html>
