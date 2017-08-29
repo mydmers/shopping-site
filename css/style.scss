@@ -126,8 +126,12 @@ header{
       display: none;
     }
     
-    img.cover_area{
-      width:100%;
+    .cover_area{
+      margin:2%;
+    }
+    
+    .new_items_ttl{
+      width:auto;
     }
     
     .nnew_items_list {
@@ -145,7 +149,7 @@ header{
     }
     
     .cover_area{
-      position:relative;
+      margin:2%;
       
       p {
         position:absolute;
@@ -162,6 +166,10 @@ header{
         }
       }
    
+    .new_items_ttl{
+      width:atuo;
+    }
+    
     }
   //min-width: 551px end
 }
