@@ -70,10 +70,7 @@ header {
   #main .cover_area {
     margin: 2%; }
   #main .new_items_ttl {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+    text-align: center; }
   #main .nnew_items_list {
     display: inline; } }
 @media (min-width: 551px) {
@@ -94,9 +91,6 @@ header {
       -moz-opacity: 0.8;
       opacity: 0.8; }
   #main .new_items_ttl {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; } }
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
