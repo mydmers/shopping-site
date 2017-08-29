@@ -120,7 +120,8 @@ header{
 
 //----------------------main start
 #main{
-  //max-width: 550px start
+  
+//-------------max-width: 550px start
   @media (max-width: 550px) {
     .pc_navi{
       display: none;
@@ -129,20 +130,64 @@ header{
     .cover_area{
       margin:2%;
     }
+ 
+//new_items start   
+  #new_items{
+    margin-left:auto;
+    margin-right:auto;
     
     .new_items_ttl{
-      text-align: center;
+      width:100%;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+       }
+       
+    ul.new_items_list{
+      margin:2%;
+      
+      li{
+        display:inline-block;
+        
+        img {
+          width:auto;
+          height:auto;
+          }
+        }
+      
+      }
     }
+//new_items end
+
+/* ▼キャプション付き画像全体を囲むボックスの装飾 */
+figure {
+    display: table;
+    width: auto; /* minimum width */
+    *width: auto; /* for IE7 and below */
     
-    .nnew_items_list {
-      display:inline;
+/* ▼画像に対する装飾 */
+    img {
+      display: block;          /* 余計な余白が出ないようにする */
+      margin: 1px; /* 下側にだけ3pxの余白を追加 */
+      margin-left:auto;
+      margin-right:auto;
     }
-}
+  }
+  
+/* ▼キャプションに対する装飾 */
+figcaption {
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: left;      /* 中身をセンタリング */
+    }
+  }
 //max-width: 550px end
 
+//--------------------------------------
+//---------------sp/pc------------------
+//--------------------------------------
 
   
-//min-width: 551px start
+//-------------min-width: 551px start
   @media (min-width: 551px) {
     .sp_navi{
       display: none;
@@ -165,12 +210,51 @@ header{
         opacity: 0.8;
         }
       }
-   
-    .new_items_ttl{
-      text-align: center;
-    }
+
+//new_items start   
+  #new_items{
+    margin-left:auto;
+    margin-right:auto;
     
+    .new_items_ttl{
+      width:100%;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+       }
+       
+    ul.new_items_list{
+      margin:2%;
+      
+      li{
+        display:inline-block;
+        }
+      
+      }
     }
+//new_items end
+
+/* ▼キャプション付き画像全体を囲むボックスの装飾 */
+figure {
+    display: table;
+    width: 100px; /* minimum width */
+    *width: auto; /* for IE7 and below */
+    
+/* ▼画像に対する装飾 */
+    img {
+      display: block;          /* 余計な余白が出ないようにする */
+      margin: 1px; /* 下側にだけ3pxの余白を追加 */
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+  
+/* ▼キャプションに対する装飾 */
+figcaption {
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: left;      /* 中身をセンタリング */
+    }
+  }
   //min-width: 551px end
 }
 //----------------------main end
