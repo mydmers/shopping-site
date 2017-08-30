@@ -80,20 +80,22 @@ header {
         width: 100%;
         height: auto;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        text-align: center; }
       #main #new_items ul.new_items_list {
         margin: 2%; }
         #main #new_items ul.new_items_list li {
-          display: inline-block; }
+          display: inline-block;
+          width: 100%; }
           #main #new_items ul.new_items_list li img {
             width: auto;
             height: auto; }
     #main figure {
-      display: table;
       width: auto;
       /* minimum width */
       *width: auto;
       /* for IE7 and below */
+      margin: 0;
       /* ▼画像に対する装飾 */ }
       #main figure img {
         display: block;
@@ -134,17 +136,19 @@ header {
         width: 100%;
         height: auto;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        text-align: center; }
       #main #new_items ul.new_items_list {
         margin: 2%; }
         #main #new_items ul.new_items_list li {
-          display: inline-block; }
+          display: inline-block;
+          width: 100%; }
     #main figure {
-      display: table;
       width: 100px;
       /* minimum width */
       *width: auto;
       /* for IE7 and below */
+      margin: 0;
       /* ▼画像に対する装飾 */ }
       #main figure img {
         display: block;
