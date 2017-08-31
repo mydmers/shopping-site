@@ -12,52 +12,56 @@ html {
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 $blue1 : #42b9d0;
 $blue2 : #339fd1;
-$gray_blue : #eaf2f4;
-$pc_size : 751px;
-$sp_size : 750px;
+$base_color : #f7f6f5;
+$pc_size : 866px;
+$sp_size : 865px;
 
 //---------------------head end--------------------
 
 
 .body_size {
-  min-width: 744px;//
+  min-width: 550px;//
   max-width: 1089px;//
   width: 100%;
 }
 
 //---------------------body start--------------------
-
+.bg{
+  background-color: $base_color;
+}
 //-------------max-width: sp start-------------
   @media (max-width: $sp_size) {
   	header{
-  		background: $gray_blue;
-  
-  	#header_in{
-  		padding-top: 10px;
-  		padding-bottom:4px;
-  		text-align:center;
   		
-      .sp_navi {
-        text-align:center;
-      
-      .clearfix::after {
-          content: '';
-          display: block;
-          clear: both;
-          }
+  	  #header_in{
+    		padding-top: 10px;
+    		padding-bottom:4px;
+    		text-align:center;
+  		
+        .sp_navi {
+          text-align:center;
         }
-	    }
-
-    .pc_navi{
-      display: none;
-    }
+      
+        div.logo.a.img {
+          .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+          }        
+        }
+      
+        .pc_navi{
+          display: none;
+        }
+      }
+    
     
 //  .menu_sp_toggle start
   .menu_sp_toggle {
-    width: 180px;
-    position: absolute;
+//    width: 180px;
+//    position: absolute;
     top:50px;
-    right:2%;
+//    right:2%;
     border: 1px solid #eee;
     background: white;
     margin: 0;
@@ -144,6 +148,14 @@ figcaption {
     }
 //figure end
 
+#shopping_guide {
+  background-color:white;
+  position:relative;
+  width:100%;
+  height:100%;
+  margin: auto;
+}
+
 }
 //-------------max-width: sp end-------------
 
@@ -153,7 +165,6 @@ figcaption {
 //-------------min-width: pc start-------------
   @media (min-width: $pc_size) {
   	header{
-  		background: $gray_blue;
   
   	#header_in{
   		padding-top: 10px;
@@ -253,5 +264,13 @@ figcaption {
     }   
 //figure end  
      
+#shopping_guide {
+  background-color:white;
+  position:relative;
+  width:100%;
+  height:100%;
+  margin: auto;
+}
+
 }
 //-------------min-width: pc end-------------
