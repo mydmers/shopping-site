@@ -2,165 +2,164 @@
 html {
   font-size: 62.5%; }
 
-header {
-  background: #eaf2f4; }
-  header #header_in {
-    padding-top: 10px;
-    padding-bottom: 4px; }
-  @media (max-width: 550px) {
+.body_size {
+  min-width: 744px;
+  max-width: 1089px;
+  width: 100%; }
+
+@media (max-width: 750px) {
+  header {
+    background: #eaf2f4; }
+    header #header_in {
+      padding-top: 10px;
+      padding-bottom: 4px;
+      text-align: center; }
+      header #header_in .sp_navi {
+        text-align: center; }
+        header #header_in .sp_navi .clearfix::after {
+          content: '';
+          display: block;
+          clear: both; }
     header .pc_navi {
       display: none; }
-    header #header_in {
-      text-align: center; }
-    header .sp_navi .clearfix::after {
-      content: '';
-      display: block;
-      clear: both; }
-    header div.sp_navi_li {
-      text-align: center; } }
+    header .menu_sp_toggle {
+      width: 180px;
+      position: absolute;
+      top: 50px;
+      right: 2%;
+      border: 1px solid #eee;
+      background: white;
+      margin: 0;
+      padding: 0;
+      display: none;
+      z-index: 100; }
+      header .menu_sp_toggle li {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        header .menu_sp_toggle li a {
+          display: block;
+          padding: 10px 8px;
+          border-bottom: 1px solid #eee;
+          font-size: 14px;
+          text-decoration: none; }
 
-.menu_sp_toggle {
-  width: 180px;
-  position: absolute;
-  top: 50px;
-  right: 2%;
-  border: 1px solid #eee;
-  background: white;
-  margin: 0;
-  padding: 0;
-  display: none;
-  z-index: 100; }
-  .menu_sp_toggle li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .menu_sp_toggle li a {
-      display: block;
-      padding: 10px 8px;
-      border-bottom: 1px solid #eee;
-      font-size: 14px;
-      text-decoration: none; }
+  .cover_area {
+    margin: 2%; }
 
-@media (min-width: 551px) {
-  .sp_navi {
-    display: none; }
-
-  #header_in {
-    padding: 15px 0 10px 0; }
-
-  .pc_navi_li {
-    margin: 0;
-    padding: 0; }
-    .pc_navi_li li {
-      list-style: none;
-      margin: 5px 0 0 0;
-      padding: 0; }
-      .pc_navi_li li a {
-        color: #626262;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px;
-        font-size: 1.4rem;
-        float: left;
-        padding-right: 10px; }
-      .pc_navi_li li a:hover {
-        color: #42b9d0; } }
-@media (max-width: 550px) {
-  #main {
-    /* ▼キャプション付き画像全体を囲むボックスの装飾 */
-    /* ▼キャプションに対する装飾 */ }
-    #main .pc_navi {
-      display: none; }
-    #main .cover_area {
-      margin: 2%; }
-    #main #new_items {
-      margin-left: auto;
-      margin-right: auto; }
-      #main #new_items .new_items_ttl {
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center; }
-      #main #new_items ul.new_items_list {
-        margin: 2%; }
-        #main #new_items ul.new_items_list li {
-          display: inline-block;
-          width: 100%; }
-          #main #new_items ul.new_items_list li img {
-            width: auto;
-            height: auto; }
-    #main figure {
+  #new_items {
+    text-align: center; }
+    #new_items .new_items_ttl {
       width: auto;
-      /* minimum width */
-      *width: auto;
-      /* for IE7 and below */
-      margin: 0;
-      /* ▼画像に対する装飾 */ }
-      #main figure img {
-        display: block;
-        /* 余計な余白が出ないようにする */
-        margin: 1px;
-        /* 下側にだけ3pxの余白を追加 */
-        margin-left: auto;
-        margin-right: auto; }
-    #main figcaption {
-      font-size: 0.9em;
-      /* 文字サイズを90%に */
-      text-align: left;
-      /* 中身をセンタリング */ } }
-@media (min-width: 551px) {
-  #main {
-    /* ▼キャプション付き画像全体を囲むボックスの装飾 */
-    /* ▼キャプションに対する装飾 */ }
-    #main .sp_navi {
-      display: none; }
-    #main .cover_area {
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+    #new_items ul.new_items_list {
       margin: 2%; }
-      #main .cover_area p {
-        position: absolute;
-        bottom: 5px;
-        left: 0px;
-        width: 300px;
-        text-align: center;
-        color: #fff;
-        line-height: 250%;
-        background-color: #000;
-        filter: alpha(opacity=80);
-        -moz-opacity: 0.8;
-        opacity: 0.8; }
-    #main #new_items {
+      #new_items ul.new_items_list li {
+        display: inline-block;
+        width: auto; }
+        #new_items ul.new_items_list li img {
+          width: auto;
+          height: auto; }
+
+  /* ▼キャプション付き画像全体を囲むボックスの装飾 */
+  figure {
+    display: table;
+    width: 100px;
+    /* minimum width */
+    *width: auto;
+    /* for IE7 and below */
+    margin: 2px;
+    /* ▼画像に対する装飾 */ }
+    figure img {
+      display: block;
+      /* 余計な余白が出ないようにする */
+      margin: 0px;
+      /* 周りに2pxの余白を追加 */
       margin-left: auto;
       margin-right: auto; }
-      #main #new_items .new_items_ttl {
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center; }
-      #main #new_items ul.new_items_list {
-        margin: 2%; }
-        #main #new_items ul.new_items_list li {
-          display: inline-block;
-          width: 100%; }
-    #main figure {
-      width: 100px;
-      /* minimum width */
-      *width: auto;
-      /* for IE7 and below */
+
+  /* ▼キャプションに対する装飾 */
+  figcaption {
+    font-size: 0.9em;
+    /* 文字サイズを90%に */
+    text-align: left;
+    /* 中身をセンタリング */
+    margin: 2px; } }
+@media (min-width: 751px) {
+  header {
+    background: #eaf2f4; }
+    header #header_in {
+      padding-top: 10px;
+      padding-bottom: 4px;
+      padding: 15px 0 10px 0; }
+    header .sp_navi {
+      display: none; }
+    header .pc_navi_li {
       margin: 0;
-      /* ▼画像に対する装飾 */ }
-      #main figure img {
-        display: block;
-        /* 余計な余白が出ないようにする */
-        margin: 1px;
-        /* 下側にだけ3pxの余白を追加 */
-        margin-left: auto;
-        margin-right: auto; }
-    #main figcaption {
-      font-size: 0.9em;
-      /* 文字サイズを90%に */
-      text-align: left;
-      /* 中身をセンタリング */ } }
+      padding: 0; }
+      header .pc_navi_li li {
+        list-style: none;
+        margin: 5px 0 0 0;
+        padding: 0; }
+        header .pc_navi_li li a {
+          color: #626262;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 14px;
+          font-size: 1.4rem;
+          float: left;
+          padding-right: 10px; }
+        header .pc_navi_li li a:hover {
+          color: #42b9d0; }
+
+  .cover_area {
+    margin: 2%; }
+
+  #new_items {
+    text-align: center; }
+    #new_items .new_items_ttl {
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+    #new_items ul.new_items_list {
+      margin: auto; }
+      #new_items ul.new_items_list li {
+        display: inline-block;
+        width: auto; }
+        #new_items ul.new_items_list li img {
+          width: auto;
+          height: auto; }
+
+  /* ▼キャプション付き画像全体を囲むボックスの装飾 */
+  figure {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    width: 100px;
+    /* minimum width */
+    *width: auto;
+    /* for IE7 and below */
+    margin: 0px;
+    padding: 3px;
+    /* ▼画像に対する装飾 */ }
+    figure img {
+      display: block;
+      /* 余計な余白が出ないようにする */
+      margin: 0px;
+      /* 周りに2pxの余白を追加 */ }
+
+  /* ▼キャプションに対する装飾 */
+  figcaption {
+    font-size: 0.9em;
+    /* 文字サイズを90%に */
+    text-align: left;
+    /* 中身をセンタリング */
+    margin: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

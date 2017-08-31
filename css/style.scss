@@ -6,52 +6,52 @@ html {
   font-size: $size + px;
   font-size: ($size / $base) * 1rem;
 }
+
+
+
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 $blue1 : #42b9d0;
 $blue2 : #339fd1;
 $gray_blue : #eaf2f4;
+$pc_size : 751px;
+$sp_size : 750px;
 
-//----------------------header start
-header{
+//---------------------head end--------------------
 
-  background: $gray_blue;
+
+.body_size {
+  min-width: 744px;//
+  max-width: 1089px;//
+  width: 100%;
+}
+
+//---------------------body start--------------------
+
+//-------------max-width: sp start-------------
+  @media (max-width: $sp_size) {
+  	header{
+  		background: $gray_blue;
   
-  #header_in{
-    padding-top: 10px;
-    padding-bottom:4px;
-    
-  }
+  	#header_in{
+  		padding-top: 10px;
+  		padding-bottom:4px;
+  		text-align:center;
+  		
+      .sp_navi {
+        text-align:center;
+      
+      .clearfix::after {
+          content: '';
+          display: block;
+          clear: both;
+          }
+        }
+	    }
 
-
-//max-width: 550px start
-  @media (max-width: 550px) {
     .pc_navi{
       display: none;
     }
-    #header_in{
-      text-align:center;
-    }
-    .sp_navi {
-      
-//       div.logo.a {
-//           text-align:center;
-//        }
-      
-        .clearfix::after {
-            content: '';
-            display: block;
-            clear: both;
-            }
-    }
     
-    div.sp_navi_li{
-        text-align:center;
-    }
-    
-  }
-}
-//max-width: 550px end
-
 //  .menu_sp_toggle start
   .menu_sp_toggle {
     width: 180px;
@@ -81,14 +81,88 @@ header{
     }
   }
 //  .menu_sp_toggle end
+}
+//header end
+
+//cover start
+    .cover_area{
+      margin:2%;
+    }
+ 
+//new_items start   
+  #new_items{
+    text-align:center;
+    
+    .new_items_ttl{
+      width:auto;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+       }
+       
+    ul.new_items_list{
+      margin:2%;
+      
+      li{
+        display:inline-block;
+        width:auto;
+        
+        img {
+          width:auto;
+          height:auto;
+          }
+        }
+      
+      }
+    }
+//new_items end
+
+
+//figure start
+/* ▼キャプション付き画像全体を囲むボックスの装飾 */
+figure {
+    display: table;
+    width: 100px; /* minimum width */
+    *width: auto; /* for IE7 and below */
+    margin:2px;
+    
+/* ▼画像に対する装飾 */
+    img {
+      display: block;          /* 余計な余白が出ないようにする */
+      margin: 0px; /* 周りに2pxの余白を追加 */
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
   
-//min-width: 551px start
-  @media (min-width: 551px) {
+/* ▼キャプションに対する装飾 */
+figcaption {
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: left;      /* 中身をセンタリング */
+    margin:2px;
+    }
+//figure end
+
+}
+//-------------max-width: sp end-------------
+
+//-----------------------------------
+//-----------------------------------
+
+//-------------min-width: pc start-------------
+  @media (min-width: $pc_size) {
+  	header{
+  		background: $gray_blue;
+  
+  	#header_in{
+  		padding-top: 10px;
+  		padding-bottom:4px;
+  		padding: 15px 0 10px 0;
+  	}
+
     .sp_navi{
       display: none;
-    }
-    #header_in{
-      padding: 15px 0 10px 0;
     }
 
     .pc_navi_li{
@@ -113,29 +187,19 @@ header{
           color: $blue1;
         }
       }
-    }
-  //min-width: 551px end
+	}
 }
-//----------------------header end
+//header end
 
-//----------------------main start
-#main{
-  
-//-------------max-width: 550px start
-  @media (max-width: 550px) {
-    .pc_navi{
-      display: none;
-    }
-    
-    .cover_area{
-      margin:2%;
-    }
- 
-//new_items start   
+//cover start
+	.cover_area{
+		margin:2%;
+	}
+
+//new_items start 
   #new_items{
-    margin-left:auto;
-    margin-right:auto;
-    
+    text-align:center;
+
     .new_items_ttl{
       width:100%;
       height:auto;
@@ -145,122 +209,49 @@ header{
        }
        
     ul.new_items_list{
-      margin:2%;
+      margin:auto;
       
       li{
         display:inline-block;
-        width:100%;
+        width:auto;
         
         img {
           width:auto;
           height:auto;
-          }
+        }
         }
       
       }
     }
 //new_items end
 
+//figure start
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
-//  display: table;
-    width: auto; /* minimum width */
-    *width: auto; /* for IE7 and below */
-    margin:0;
+  display:inline-block;
+  margin-left:auto;
+  margin-right:auto;
+  display: table;
+  width: 100px; /* minimum width */
+  *width: auto; /* for IE7 and below */
+  margin: 0px;
+  padding:3px;
     
 /* ▼画像に対する装飾 */
-    img {
-      display: block;          /* 余計な余白が出ないようにする */
-      margin: 1px; /* 下側にだけ3pxの余白を追加 */
-      margin-left:auto;
-      margin-right:auto;
-    }
-  }
-  
-/* ▼キャプションに対する装飾 */
-figcaption {
-    font-size: 0.9em;        /* 文字サイズを90%に */
-    text-align: left;      /* 中身をセンタリング */
-    }
-  }
-//max-width: 550px end
+  img {
+    display: block;          /* 余計な余白が出ないようにする */
+    margin: 0px; /* 周りに2pxの余白を追加 */
 
-//--------------------------------------
-//---------------sp/pc------------------
-//--------------------------------------
-
-  
-//-------------min-width: 551px start
-  @media (min-width: 551px) {
-    .sp_navi{
-      display: none;
-    }
-    
-    .cover_area{
-      margin:2%;
-      
-      p {
-        position:absolute;
-        bottom:5px;
-        left:0px;
-        width:300px;
-        text-align:center;
-        color:#fff;
-        line-height:250%;
-        background-color:#000;
-        filter:alpha(opacity=80);
-        -moz-opacity: 0.8;
-        opacity: 0.8;
-        }
-      }
-
-//new_items start   
-  #new_items{
-    margin-left:auto;
-    margin-right:auto;
-    
-    .new_items_ttl{
-      width:100%;
-      height:auto;
-      margin-left:auto;
-      margin-right:auto;
-      text-align:center;
-       }
-       
-    ul.new_items_list{
-      margin:2%;
-      
-      li{
-        display:inline-block;
-        width:100%;
-        }
-      
-      }
-    }
-//new_items end
-
-/* ▼キャプション付き画像全体を囲むボックスの装飾 */
-figure {
-//  display: table;
-    width: 100px; /* minimum width */
-    *width: auto; /* for IE7 and below */
-    margin:0;
-    
-/* ▼画像に対する装飾 */
-    img {
-      display: block;          /* 余計な余白が出ないようにする */
-      margin: 1px; /* 下側にだけ3pxの余白を追加 */
-      margin-left:auto;
-      margin-right:auto;
-    }
   }
-  
-/* ▼キャプションに対する装飾 */
-figcaption {
-    font-size: 0.9em;        /* 文字サイズを90%に */
-    text-align: left;      /* 中身をセンタリング */
-    }
-  }
-  //min-width: 551px end
 }
-//----------------------main end
+  
+/* ▼キャプションに対する装飾 */
+figcaption {
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: left;      /* 中身をセンタリング */
+    margin:0px;
+    }   
+//figure end  
+     
+}
+//-------------min-width: pc end-------------

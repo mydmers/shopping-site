@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 
 <!------------------------ Basic Page Needs ------------------------>
@@ -11,20 +11,20 @@
 <!------------------------ Mobile Specific Metas ------------------------>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!------------------------ font ------------------------>
+<!------------------------ font ------------------------>
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
  
-  <!------------------------ css ------------------------>
+<!------------------------ css ------------------------>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 
-  <!------------------------ Favicon ------------------------>
+<!------------------------ Favicon ------------------------>
   <link rel="icon" type="image/png" href="images/favicon.png">
   
-  <!------------------------ ハンバーガーメニュー ------------------------> 
+<!------------------------ ハンバーガーメニュー ------------------------> 
    <script>
    $(function(){
      $(document).ready(function(){
@@ -35,7 +35,7 @@
     });
   </script>
   
-  <!------------------------ Owl Carousel ------------------------>
+<!------------------------ Owl Carousel ------------------------>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
   <script>
@@ -57,7 +57,8 @@
 
 <!------------------------ body start ------------------------>
 <body>
-  
+<!------------------------ body_size start------------------------>
+<div class="body_size">
 <!------------------------ header start ------------------------>
 <header>
   <div id="header_in" class="container">
@@ -67,11 +68,10 @@
           <a href="top.html">
             <img class="u-max-full-width" src="images/top/logo.png" alt="shopping-site" srcset="images/top/logo@2x.png 2x" />
           </a>
-          </div>
+        </div>
       </div>
-      
-      <div class="six columns navi">
 
+      <div class="six columns navi">
         <!-- sp_navi start-->        
         <div class="sp_navi">
           <div class="sp_navi_li">
@@ -89,7 +89,6 @@
 
         <!-- pc_navi start-->
         <div class="pc_navi">
-
           <ul class="pc_navi_li">
             <li><a href="">LOGIN</a></li>
             <li><a href="">CART</a></li>
@@ -98,10 +97,8 @@
             <li><a href=""><img src="images/top/facebook.png" border="0"></a></li>
             <li><a href=""><img src="images/top/insta.png" border="0"></a></li>
           </ul>
-
         </div>
         <!-- pc_navi end-->
-
       </div>
     </div>
     <!-- row -->
@@ -114,6 +111,7 @@
 <div id="main" class="row">
 <!------------------------ submain start------------------------>
 <div class="submain nine columns">
+  <div class="container">
   <div class="owl-carousel cover_area">
     <div>
       <img  src="images/top/ca_banner.jpg" >"</img>
@@ -222,8 +220,10 @@
   </div>
 </div>
 <!------------------------ submain end------------------------> 
+</div>
+<!------------------------ 9column_size end------------------------>
 
-<!------------------------ sidebar------------------------>
+<!------------------------ sidebar start------------------------>
 <div class="sidebar three columns">
   <div class="search"><input type="text" name=""/></div>
   <div class="side-sec">
@@ -239,7 +239,9 @@
 </div>
 <!------------------------ sidebar end------------------------>  
 </div>
+</div>
 <!------------------------ main end------------------------>
+</div>
 </body>
 <!------------------------ body end------------------------>
 </html>
