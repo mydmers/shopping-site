@@ -89,11 +89,11 @@ $sp_size : 750px;
       margin:2%;
     }
  
-//new_items start   
-  #new_items{
+//items start   
+  #items{
     text-align:center;
     
-    .new_items_ttl{
+    .items_ttl{
       width:auto;
       height:auto;
       margin-left:auto;
@@ -101,7 +101,7 @@ $sp_size : 750px;
       text-align:center;
        }
        
-    ul.new_items_list{
+    ul.items_list{
       margin:2%;
       
       li{
@@ -116,7 +116,7 @@ $sp_size : 750px;
       
       }
     }
-//new_items end
+//items end
 
 
 //figure start
@@ -196,11 +196,11 @@ figcaption {
 		margin:2%;
 	}
 
-//new_items start 
-  #new_items{
+//items start 
+  #items{
     text-align:center;
 
-    .new_items_ttl{
+    .items_ttl{
       width:100%;
       height:auto;
       margin-left:auto;
@@ -208,7 +208,7 @@ figcaption {
       text-align:center;
        }
        
-    ul.new_items_list{
+    ul.items_list{
       margin:auto;
       
       li{
@@ -223,7 +223,7 @@ figcaption {
       
       }
     }
-//new_items end
+//items end
 
 //figure start
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
