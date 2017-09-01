@@ -135,7 +135,7 @@ html {
       #items ul.items_list li {
         display: inline-block;
         width: 200px;
-        margin: 2px; }
+        margin: auto; }
         #items ul.items_list li img {
           width: auto;
           height: auto; }
