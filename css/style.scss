@@ -12,7 +12,7 @@ html {
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 $blue1 : #42b9d0;
 $blue2 : #339fd1;
-$base_color : #f7f6f5;
+$base_color : #F0F8FF;//AliceBlue
 $pc_size : 550px;
 $sp_size : 549px;
 
@@ -149,13 +149,26 @@ figcaption {
     }
 //figure end
 
-#shopping_guide {
-  background-color:white;
-  position:relative;
-  width:100%;
-  height:100%;
-  margin: auto;
-}
+//shopping_guide start      
+  #shopping_guide {
+    background-color: #F8F8FF;//GhostWhite;
+    position:relative;
+    width:300px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    }
+  
+  #guide_setting{
+    background:#F8F8FF;//GhostWhite;
+    width:300px;
+    }
+  
+  #guide_setting2{
+    background:#F8F8FF;//GhostWhite;
+    width:300px;
+    }
+//shopping_guide end 
 
 }
 //-------------max-width: sp end-------------
@@ -254,7 +267,6 @@ figure {
   img {
     display: block;          /* 余計な余白が出ないようにする */
     margin: 0px; /* 周りに2pxの余白を追加 */
-
   }
 }
   
@@ -266,35 +278,47 @@ figcaption {
     }   
 //figure end  
      
-#shopping_guide {
-  background-color:white;
-  position:relative;
-  width:400px;
-  height:300px;
-  margin: 0 auto;
+//shopping_guide start      
+  #shopping_guide {
+    background-color: $base_color;
+    position:relative;
+    width:500px;
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    }
   
-  .guide_setting{
+  #guide_setting{
+    background-color: #F8F8FF;//GhostWhite
+    width:245px;
+    height:300px;
     position:absolute;
     top:0px;
     left:0px;
-    margin-right:5px;
-    
-    ul.li{
-      width:100px;
+    margin-right:10px;
+
+    ul {
+      font-size:90%;
     }
-  }
+    }
   
-  .guide_setting2{
+  #guide_setting2{
+    background: #F8F8FF;//GhostWhite
     position:absolute;
+    width:245px;
+    height:300px;
     top:0px;
     right:0px;
     
-    ul.li{
-      width:100px;
+    ul {
+      font-size:90%;
+      
+      li{
+
+      }
     }
-  }
-  
-}
+    }
+//shopping_guide end 
 
 }
 //-------------min-width: pc end-------------
