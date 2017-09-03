@@ -70,7 +70,6 @@ $sp_size : 549px;
     z-index: 100; //追記
 
     li{
-
       list-style: none;
       margin: 0;
       padding:0;
@@ -123,7 +122,6 @@ $sp_size : 549px;
     }
 //items end
 
-
 //figure start
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
@@ -149,7 +147,7 @@ figcaption {
     }
 //figure end
 
-//shopping_guide start      
+//inaaaaaing_guide start      
   #shopping_guide {
     background-color: #F8F8FF;//GhostWhite;
     position:relative;
@@ -170,11 +168,123 @@ figcaption {
     }
 //shopping_guide end 
 
+//sidebar start
+.side_style{
+  background:white;
+
+  
+//input.type start
+  input{
+    background-color: #D3D3D3;//LightGrey
+  }
+  
+  .input_type{
+    background-image:url("../images/top/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+//side_menu start
+#side_menu{
+
+ul.side_menu_toggle1 {
+  display: none;
+  
+  li{
+    background:white;
+    margin:0px;
+    height:30px;
+
+    a{
+      color:black;
+      text-decoration:none;
+      }
+    }
+  }
+
+
+
+  
+ul.side_menu_toggle2 {
+  display: none;
+  
+  li{
+    background:white;
+    margin:0px;
+    height:30px;
+
+    a{
+      color:black;
+      text-decoration:none;
+      }
+    }
+  }
+
+  .side_color{
+    background-color: #696969;//DimGray
+    width:100%;
+    color:white;
+    margin-top:2px;
+    margin-right:0px;
+    margin-left:0px;
+    }
+
+  a.side_color{
+    text-decoration:blink;
+    width:100%;
+    margin:2px 0 0 0;
+    margin-right:0px;
+    margin-left:0px;
+    }
+    
+  figure.caption_style{
+    width:100%;
+    background:white;
+    color:black;
+    margin-top:2px;
+    margin-right:0px;
+    margin-left:0px;
+    
+    img {
+      margin-right:auto;
+      margin-left:auto;
+      margin-top:10px;
+      text-align:center;
+      float:left;
+      }
+    }
+//side_menu end
+}
+//sidebar end
+}
+//footer_style start
+
+div.arrow_style{
+  margin-left:auto;
+  text-align:center;
+}
+
+.footer_style{
+  text-align:center;
+  
+  li{
+    display:inline-block;
+    width:auto;
+    height:auto;
+    }
+  }
+
+.footer_style2{
+  text-align:center;
+  font-size:12px;
+  filter:alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+//footer_style end
+
 }
 //-------------max-width: sp end-------------
-
-//-----------------------------------
-//-----------------------------------
 
 //-------------min-width: pc start-------------
   @media (min-width: $pc_size) {
@@ -291,7 +401,7 @@ figcaption {
   #guide_setting{
     background-color: #F8F8FF;//GhostWhite
     width:245px;
-    height:300px;
+    height:250px;
     position:absolute;
     top:0px;
     left:0px;
@@ -306,7 +416,7 @@ figcaption {
     background: #F8F8FF;//GhostWhite
     position:absolute;
     width:245px;
-    height:300px;
+    height:250px;
     top:0px;
     right:0px;
     
@@ -314,11 +424,126 @@ figcaption {
       font-size:90%;
       
       li{
-
       }
     }
     }
-//shopping_guide end 
+//shopping_guide end
+
+//sidebar start
+.side_style{
+  background:white;
+
+  
+//input.type start
+  input{
+    background-color: #D3D3D3;//LightGrey
+  }
+  
+  .input_type{
+    background-image:url("../images/top/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+//side_menu start
+#side_menu{
+
+ul.side_menu_toggle1 {
+  display: none;
+  
+  li{
+    background:white;
+    margin:0px;
+    height:30px;
+
+    a{
+      color:black;
+      text-decoration:none;
+      }
+    }
+  }
+
+
+
+  
+ul.side_menu_toggle2 {
+  display: none;
+  
+  li{
+    background:white;
+    margin:0px;
+    height:30px;
+
+    a{
+      color:black;
+      text-decoration:none;
+      }
+    }
+  }
+
+  .side_color{
+    background-color: #696969;//DimGray
+    width:100%;
+    color:white;
+    margin-top:2px;
+    margin-right:0px;
+    margin-left:0px;
+    }
+
+  a.side_color{
+    text-decoration:blink;
+    width:100%;
+    margin:2px 0 0 0;
+    margin-right:0px;
+    margin-left:0px;
+    }
+    
+  figure.caption_style{
+    width:100%;
+    background:white;
+    color:black;
+    margin-top:2px;
+    margin-right:0px;
+    margin-left:0px;
+    
+    img {
+      margin-right:auto;
+      margin-left:auto;
+      margin-top:10px;
+      text-align:center;
+      }
+    }
+//side_menu end
+}
+//sidebar end
+}
+
+//footer_style start
+
+div.arrow_style{
+  margin-left:auto;
+  text-align:right;
+}
+
+
+.footer_style{
+  text-align:center;
+  
+  li{
+    display:inline-block;
+    width:auto;
+    height:auto;
+    }
+  }
+
+.footer_style2{
+  text-align:center;
+  font-size:12px;
+  filter:alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+//footer_style end
 
 }
 //-------------min-width: pc end-------------
