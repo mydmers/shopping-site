@@ -25,7 +25,8 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   
 <!------------------------ ハンバーガーメニュー ------------------------> 
-   <script>
+
+<script>
    $(function(){
      $(document).ready(function(){
         $("#menu_sp").click(function(){
@@ -34,25 +35,17 @@
      });
     });
   </script>
-  
-<!------------------------ Owl Carousel ------------------------>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-  <script>
+
+<!------------------------ ハンバーガーメニュー２ ------------------------>
+<!--  <script>
   $(document).ready(function(){
-     $('.owl-carousel').owlCarousel(
-        {
-          loop: true,
-          nav: false,
-          dots: true,
-          items: 1,
-          autoplay: true,
-        }
-    );
+    $("#menu_sp").click(function(){
+     $(".menu_sp_toggle").slideToggle();
+   });
   }); 
   </script>
-  
-<!------------------------ side_menu1 ------------------------>
+--> 
+  <!------------------------ side_menu1 ------------------------>
   <script>
   $(document).ready(function(){
     $("#side_menu1").click(function(){
@@ -67,6 +60,23 @@
     $("#side_menu2").click(function(){
      $(".side_menu_toggle2").slideToggle();
    });
+  }); 
+  </script>
+
+<!------------------------ Owl Carousel ------------------------>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function(){
+     $('.owl-carousel').owlCarousel(
+        {
+          loop: true,
+          nav: false,
+          dots: true,
+          items: 1,
+          autoplay: true,
+        }
+    );
   }); 
   </script>
   
@@ -132,7 +142,7 @@
 <!------------------------ 9column_size start------------------------>
 <div class="submain nine columns">
 
-  <div class="owl-carousel cover_area">
+  <div class="owl-carousel owl-theme cover_area">
     <div>
       <img  src="images/top/ca_banner.jpg" >"</img>
     </div>
