@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!------------------------ Basic Page Needs ------------------------>
+  <meta charset="utf-8">
+  <title>shopping-site</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+<!------------------------ Mobile Specific Metas ------------------------>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!------------------------ font ------------------------>
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+ 
+<!------------------------ css ------------------------>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+<!------------------------ Favicon ------------------------>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+<!------------------------ ハンバーガーメニュー ------------------------> 
+
+<script>
+   $(function(){
+     $(document).ready(function(){
+        $("#menu_sp").click(function(){
+        $(".menu_sp_toggle").slideToggle();
+       });
+     });
+    });
+  </script>
+
+<!------------------------ ハンバーガーメニュー２ ------------------------>
+<!--  <script>
+  $(document).ready(function(){
+    $("#menu_sp").click(function(){
+     $(".menu_sp_toggle").slideToggle();
+   });
+  }); 
+  </script>
+--> 
+  <!------------------------ side_menu1 ------------------------>
+  <script>
+  $(document).ready(function(){
+    $("#side_menu1").click(function(){
+     $(".side_menu_toggle1").slideToggle();
+   });
+  }); 
+  </script>
+  
+  <!------------------------ side_menu2 ------------------------>
+  <script>
+  $(document).ready(function(){
+    $("#side_menu2").click(function(){
+     $(".side_menu_toggle2").slideToggle();
+   });
+  }); 
+  </script>
+
+<!------------------------ Owl Carousel ------------------------>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function(){
+     $('.owl-carousel').owlCarousel(
+        {
+          loop: true,
+          nav: false,
+          dots: true,
+          items: 1,
+          autoplay: true,
+        }
+    );
+  }); 
+  </script>
+  
+  
+<!----  <script src="test-carousel.js"></script> ----->
+
+</head>
+
+<!------------------------ body start ------------------------>
+<body>
+<!------------------------ body_size start------------------------>
+<div class="body_size bg">
+<!------------------------ header start ------------------------>
+<header>
+  <div id="header_in" class="container">
+    <div class="row">
+      <div class="six columns">
+        <div class="logo">
+          <a href="top.html">
+            <img class="u-max-full-width" src="images/top/logo.png" alt="shopping-site" srcset="images/top/logo@2x.png 2x" />
+          </a>
+        </div>
+      </div>
+
+      <div class="six columns">
+        <!-- sp_navi start-->        
+        <div class="sp_navi">
+          <div class="sp_navi_li">
+            <img class="u-max-full-width" src="images/top_sp/fb.png" alt="fb_navi" srcset="images/top_sp/fb@2x.png 2x" />
+            <img class="u-max-full-width" src="images/top_sp/insta.png" alt="insta_navi" srcset="images/top_sp/insta@2x.png 2x" />
+            <img id="menu_sp" class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="menu_icon_navi" srcset="images/top_sp/menu_icon@2x.png 2x" />
+          </div>
+          <ul class="menu_sp_toggle">
+            <li><a href="">LOGIN</a></li>
+            <li><a href="">CART</a></li>
+            <li><a href="">MY PAGE</a></li>
+          </ul>
+        </div>
+        <!-- sp_navi end-->
+
+        <!-- pc_navi start-->
+        <div class="pc_navi">
+          <ul class="pc_navi_li">
+            <li><a href="">LOGIN</a></li>
+            <li><a href="">CART</a></li>
+            <li><a href="">MY PAGE</a></li>
+            <li><a href="">SHOPPING GUIDE</a></li>
+            <li><a href=""><img src="images/top/facebook.png" border="0"></a></li>
+            <li><a href=""><img src="images/top/insta.png" border="0"></a></li>
+          </ul>
+        </div>
+        <!-- pc_navi end-->
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- header_in -->
+</header>
+<!------------------------ header end------------------------>
+
+<!------------------------ main start------------------------>
+<div id="main" class="row">
+<!------------------------ 9column_size start------------------------>
+<div class="submain nine columns">
+
+    <ul class="breadcrumbs">
+        <li><<a href="top.html">HOME</a> &gt;</li>
+        <li><a href="list.html">カテゴリー名</a></li>
+    </ul>
+
+    <img class="u-max-full-width" src="images/list/cate_image.jpg" alt="list-site" srcset="images/list/cate_image_sp.jpg 2x" />
+
+
+<!------------------------ new_items start------------------------>    
+  <div id="items">
+    <h3 class="items_ttl">
+      <img src="images/top/title_newitems.png">
+    </h3>
+    
+    <ul class="items_list">
+      <li>
+        <figure>
+          <img src="images/top/item_01.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_01.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_01.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_01.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_01.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_01.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+    </ul>      
+  </div>
+
+<!------------------------ popular_items start------------------------>
+    
+  <div id="items">
+    <h3 class="items-ttl">
+      <img src="images/top/title_popular.png">
+    </h3>
+    
+    <ul class="items_list">
+      <li>
+        <figure>
+          <img src="images/top/item_07.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_08.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_09.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_10.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_11.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/top/item_12.jpg">
+          <figcaption>
+            商品名が入ります商品名が入ります商品名が入ります<br>
+            ¥10,000 (tax in)
+          </figcaption>
+        </figure>
+      </li>
+    </ul>   
+  </div>
+<!------------------------ shopping_guide start------------------------>
+<h3 class="items_ttl">
+  <img src="images/top/title_guide.png">      
+</h3>
+
+  <div id="shopping_guide">
+    
+    <div id="guide_setting" class="one-half column">
+      <ul style="list-style-type: square">
+        <h6>お届けについて</h6>
+        <img src="images/top/otodoke_banner.png" width="200px" height="auto">
+        <li>○○運輸</br>
+        送料 ￥000円</li>
+        <li>ゆうパケット</br>
+        ポスト投函となります。日時指定不可</li>
+      </ul>
+    </div>
+
+    <div id="guide_setting2" class="one-half column">
+      <ul style="list-style-type: square">
+        <h6>決済について</h6>
+        <li>カード決済
+          <img src="images/top/cards.png" width="200px" height="auto"></img></li>
+        <li>代金引換</br>
+          代引き手数料が別途かかります</li>
+        <li>銀行振込</br>
+        <p>お振込み手数料お客様負担</br>
+        ご入金後の発送となります。</p></li>
+      </ul>
+    </div>
+    
+  </div>
+<!------------------------ shopping_guide end------------------------>
+  </div>
+<!------------------------ 9column_size end------------------------>
+<!------------------------ sidebar start------------------------>
+<div class="sidebar three columns side_style">
+  
+    <img src="images/top/itemserch.png" class="input_image">
+    <div class="search">
+        <input type="text" class="input_type" placeholder="Search">
+    </div>
+  
+<!--sidemenu start---> 
+  <div id="side_menu">
+    <div id="side_menu1" class="side_color">
+      ページリンク
+			<ul class="side_menu_toggle1">
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+      </ul>
+    </div>
+
+    <div id="side_menu2" class="side_color">
+      CATEGORIES
+			<ul class="side_menu_toggle2">
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+			  <li><a href="">カテゴリー名</a></li>
+      </ul>
+     </div>
+    
+    <div class="side_color">
+      ABOUT
+      <figure class="caption_style">
+        <img src="images/top/about_img.jpg">
+        <figurecaption>
+          お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明
+        </figurecaption>
+        <a href=""><img src="images/top/more_btn.png"></a>
+      </figure>
+    </div>
+    
+    <div class="side_color">
+      SHOP INFO
+      <figure class="caption_style">
+        <img src="images/top/shopinfo_img.jpg">
+        <figcaption>
+          お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明
+        </figcaption>
+        <a href=""><img src="images/top/more_btn.png"></a>
+      </figure>
+    </div>
+    
+    </div>
+<!--sidemenu end--->    
+<!------------------------ sidebar end------------------------>  
+</div>
+<!------------------------ main end------------------------> 
+</div>
+<!------------------------ footer start------------------------> 
+  <div class="arrow_style">
+    <img src="images/top/pagetop.png">
+  </div>
+  <hr>
+
+  <ul class="footer_style">
+    <li>特定商取引に基づく表記・</li>
+    <li>プライバシーポリシー・</li>
+    <li>マイページ</li>
+  </ul>
+
+  <div class="footer_style2">
+    copyright (C) APPLE BERRY all rights reserve
+  </div>
+
+<!------------------------ footer end------------------------> 
+<!------------------------ body end------------------------>
+</body>
+</html>
