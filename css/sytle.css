@@ -1,0 +1,387 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+.body_size {
+  min-width: 550px;
+  max-width: 1089px;
+  width: auto;
+  padding: 5%; }
+
+.bg {
+  background-color: #F0F8FF; }
+
+@media (max-width: 549px) {
+  header #header_in {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    text-align: center; }
+    header #header_in .sp_navi {
+      text-align: center; }
+    header #header_in div.logo.a.img .clearfix::after {
+      content: '';
+      display: block;
+      clear: both; }
+    header #header_in .pc_navi {
+      display: none; }
+  header .menu_sp_toggle {
+    top: 50px;
+    border: 1px solid #eee;
+    background: white;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 100; }
+    header .menu_sp_toggle li {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header .menu_sp_toggle li a {
+        display: block;
+        padding: 10px 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        text-decoration: none; }
+
+  .breadcrumbs {
+    background-color: #D3D3D3;
+    list-style-type: none; }
+    .breadcrumbs li {
+      display: inline; }
+
+  .cover_area {
+    margin: 2%; }
+
+  #items .items_ttl {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  #items ul.items_list {
+    margin: 2%; }
+    #items ul.items_list li {
+      display: inline-block;
+      width: 200px;
+      margin: 5px; }
+      #items ul.items_list li img {
+        width: auto;
+        height: auto; }
+
+  /* ▼キャプション付き画像全体を囲むボックスの装飾 */
+  figure {
+    display: table;
+    width: 100px;
+    /* minimum width */
+    *width: auto;
+    /* for IE7 and below */
+    margin: 2px;
+    /* ▼画像に対する装飾 */ }
+    figure img {
+      display: block;
+      /* 余計な余白が出ないようにする */
+      margin: 0px;
+      /* 周りに2pxの余白を追加 */
+      margin-left: auto;
+      margin-right: auto; }
+
+  /* ▼キャプションに対する装飾 */
+  figcaption {
+    font-size: 0.9em;
+    /* 文字サイズを90%に */
+    text-align: left;
+    /* 中身をセンタリング */
+    margin: 2px; }
+
+  #shopping_guide {
+    background-color: #F8F8FF;
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+    #shopping_guide ul {
+      font-size: 90%; }
+      #shopping_guide ul img {
+        width: 200px;
+        height: auto; }
+
+  #guide_setting {
+    background: #F8F8FF;
+    width: 300px; }
+
+  #guide_setting2 {
+    background: #F8F8FF;
+    width: 300px; }
+
+  .side_style {
+    background: white; }
+    .side_style .input_image {
+      display: none; }
+    .side_style .search {
+      text-align: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 15px;
+      margin-bottom: 1px; }
+    .side_style input {
+      background-color: #D3D3D3;
+      width: 100%; }
+    .side_style .input_type {
+      background-image: url("../images/top/search_icon.png");
+      background-repeat: no-repeat;
+      background-position: center right;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: left; }
+    .side_style #side_menu ul.side_menu_toggle1 {
+      display: none; }
+      .side_style #side_menu ul.side_menu_toggle1 li {
+        background: white;
+        margin: 0px;
+        height: 30px; }
+        .side_style #side_menu ul.side_menu_toggle1 li a {
+          color: black;
+          text-decoration: none; }
+    .side_style #side_menu ul.side_menu_toggle2 {
+      display: none; }
+      .side_style #side_menu ul.side_menu_toggle2 li {
+        background: white;
+        margin: 0px;
+        height: 30px; }
+        .side_style #side_menu ul.side_menu_toggle2 li a {
+          color: black;
+          text-decoration: none; }
+    .side_style #side_menu .side_color {
+      background-color: #696969;
+      width: 100%;
+      color: white;
+      margin-top: 2px;
+      margin-right: 0px;
+      margin-left: 0px; }
+    .side_style #side_menu .side_color.a {
+      text-decoration: blink;
+      width: 100%;
+      margin: 2px 0 0 0;
+      margin-right: 0px;
+      margin-left: 0px; }
+    .side_style #side_menu figure.caption_style {
+      width: 100%;
+      background: white;
+      color: black;
+      margin-top: 2px;
+      margin-right: 0px;
+      margin-left: 0px; }
+      .side_style #side_menu figure.caption_style img {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+        text-align: center;
+        float: left; }
+
+  div.arrow_style {
+    margin-left: auto;
+    text-align: center; }
+
+  .footer_style {
+    text-align: center; }
+    .footer_style li {
+      display: inline-block;
+      width: auto;
+      height: auto; }
+
+  .footer_style2 {
+    text-align: center;
+    font-size: 12px;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6; } }
+@media (min-width: 550px) {
+  header #header_in {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding: 15px 0 10px 0; }
+  header .sp_navi {
+    display: none; }
+  header .pc_navi_li {
+    margin: 0;
+    padding: 0; }
+    header .pc_navi_li li {
+      list-style: none;
+      margin: 5px 0 0 0;
+      padding: 0; }
+      header .pc_navi_li li a {
+        color: #626262;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        font-size: 1.4rem;
+        float: left;
+        padding-right: 10px; }
+      header .pc_navi_li li a:hover {
+        color: #42b9d0; }
+
+  .breadcrumbs {
+    background-color: #D3D3D3;
+    list-style-type: none; }
+    .breadcrumbs li {
+      display: inline; }
+
+  .cover_area {
+    margin: 2%; }
+
+  #items .items_ttl {
+    width: 100%;
+    height: auto; }
+  #items ul.items_list li {
+    display: inline-block;
+    width: 200px;
+    margin: auto; }
+    #items ul.items_list li img {
+      width: auto;
+      height: auto; }
+
+  /* ▼キャプション付き画像全体を囲むボックスの装飾 */
+  figure {
+    display: inline-block;
+    display: table;
+    width: 100px;
+    /* minimum width */
+    *width: auto;
+    /* for IE7 and below */
+    margin: 0px;
+    padding: 3px;
+    /* ▼画像に対する装飾 */ }
+    figure img {
+      display: block;
+      /* 余計な余白が出ないようにする */
+      margin: 0px;
+      /* 周りに2pxの余白を追加 */ }
+
+  /* ▼キャプションに対する装飾 */
+  figcaption {
+    font-size: 0.9em;
+    /* 文字サイズを90%に */
+    text-align: left;
+    /* 中身をセンタリング */
+    margin: 0px; }
+
+  #shopping_guide {
+    background-color: #F0F8FF;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  #guide_setting {
+    background-color: #F8F8FF;
+    width: 245px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-right: 10px; }
+    #guide_setting ul {
+      font-size: 90%; }
+      #guide_setting ul img {
+        width: 200px;
+        height: auto; }
+
+  #guide_setting2 {
+    background: #F8F8FF;
+    position: absolute;
+    width: 245px;
+    height: 250px;
+    top: 0px;
+    right: 0px; }
+    #guide_setting2 ul {
+      font-size: 90%; }
+      #guide_setting2 ul img {
+        width: 200px;
+        height: auto; }
+
+  .side_style {
+    background: white;
+    margin-right: 0px;
+    padding-right: 0%; }
+    .side_style #side_menu .input_image {
+      margin-left: 10%;
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .side_style #side_menu .search {
+      text-align: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 15px;
+      margin-bottom: 1px; }
+    .side_style #side_menu input {
+      width: auto; }
+    .side_style #side_menu .input_type {
+      background-image: url("../images/top/search_icon.png");
+      background-color: #D3D3D3;
+      background-repeat: no-repeat;
+      background-position: center right;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: left; }
+    .side_style #side_menu .side_color {
+      background-color: #696969;
+      width: 100%;
+      color: white;
+      margin-top: 2px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 0px; }
+      .side_style #side_menu .side_color ul.side_menu_toggle1 {
+        display: none; }
+        .side_style #side_menu .side_color ul.side_menu_toggle1 li {
+          background: white;
+          margin-top: 0px;
+          height: 30px; }
+          .side_style #side_menu .side_color ul.side_menu_toggle1 li a {
+            color: black;
+            text-decoration: none; }
+      .side_style #side_menu .side_color ul.side_menu_toggle2 {
+        display: none; }
+        .side_style #side_menu .side_color ul.side_menu_toggle2 li {
+          background: white;
+          margin-top: 0px;
+          height: 30px; }
+          .side_style #side_menu .side_color ul.side_menu_toggle2 li a {
+            color: black;
+            text-decoration: none; }
+      .side_style #side_menu .side_color figure.caption_style {
+        width: auto;
+        height: auto;
+        background: white;
+        color: black;
+        margin-top: 2px;
+        margin-right: 0px;
+        margin-left: 0px; }
+        .side_style #side_menu .side_color figure.caption_style img {
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 10px;
+          text-align: center;
+          width: auto;
+          height: auto; }
+
+  div.arrow_style {
+    margin-left: auto;
+    text-align: right; }
+
+  .footer_style {
+    text-align: center; }
+    .footer_style li {
+      display: inline-block;
+      width: auto;
+      height: auto; }
+
+  .footer_style2 {
+    text-align: center;
+    font-size: 12px;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6; } }
+
+/*# sourceMappingURL=sytle.css.map */
