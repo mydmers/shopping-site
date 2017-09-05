@@ -107,14 +107,12 @@ $sp_size : 549px;
  
 //items start   
   #items{
-    text-align:center;
     
     .items_ttl{
       width:auto;
       height:auto;
       margin-left:auto;
       margin-right:auto;
-      text-align:center;
        }
        
     ul.items_list{
@@ -168,6 +166,15 @@ figcaption {
     height:auto;
     margin-left:auto;
     margin-right:auto;
+    
+    ul {
+      font-size:90%;
+      
+      img {
+        width:200px;
+        height:auto;
+      }
+    }
     }
   
   #guide_setting{
@@ -375,23 +382,19 @@ div.arrow_style{
 
 //items start 
   #items{
-    text-align:center;
 
     .items_ttl{
       width:100%;
       height:auto;
-      margin-left:auto;
-      margin-right:auto;
-      text-align:center;
        }
        
     ul.items_list{
-      margin:auto;
-      
+
       li{
         display:inline-block;
         width:200px;
         margin:auto;
+
         
         img {
           width:auto;
@@ -407,8 +410,8 @@ div.arrow_style{
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
   display:inline-block;
-  margin-left:auto;
-  margin-right:auto;
+//  margin-left:auto;
+//  margin-right:auto;
   display: table;
   width: 100px; /* minimum width */
   *width: auto; /* for IE7 and below */
@@ -451,6 +454,11 @@ figcaption {
 
     ul {
       font-size:90%;
+      
+      img {
+         width:200px;
+         height:auto;
+      }
     }
     }
   
@@ -465,10 +473,12 @@ figcaption {
     ul {
       font-size:90%;
       
-      li{
+      img {
+         width:200px;
+         height:auto;
       }
     }
-    }
+  }
 //shopping_guide end
 
 //sidebar start

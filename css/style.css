@@ -52,23 +52,20 @@ html {
   .cover_area {
     margin: 2%; }
 
-  #items {
-    text-align: center; }
-    #items .items_ttl {
-      width: auto;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; }
-    #items ul.items_list {
-      margin: 2%; }
-      #items ul.items_list li {
-        display: inline-block;
-        width: 200px;
-        margin: 5px; }
-        #items ul.items_list li img {
-          width: auto;
-          height: auto; }
+  #items .items_ttl {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  #items ul.items_list {
+    margin: 2%; }
+    #items ul.items_list li {
+      display: inline-block;
+      width: 200px;
+      margin: 5px; }
+      #items ul.items_list li img {
+        width: auto;
+        height: auto; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
@@ -102,6 +99,11 @@ html {
     height: auto;
     margin-left: auto;
     margin-right: auto; }
+    #shopping_guide ul {
+      font-size: 90%; }
+      #shopping_guide ul img {
+        width: 200px;
+        height: auto; }
 
   #guide_setting {
     background: #F8F8FF;
@@ -227,29 +229,20 @@ html {
   .cover_area {
     margin: 2%; }
 
-  #items {
-    text-align: center; }
-    #items .items_ttl {
-      width: 100%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; }
-    #items ul.items_list {
-      margin: auto; }
-      #items ul.items_list li {
-        display: inline-block;
-        width: 200px;
-        margin: auto; }
-        #items ul.items_list li img {
-          width: auto;
-          height: auto; }
+  #items .items_ttl {
+    width: 100%;
+    height: auto; }
+  #items ul.items_list li {
+    display: inline-block;
+    width: 200px;
+    margin: auto; }
+    #items ul.items_list li img {
+      width: auto;
+      height: auto; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
     display: table;
     width: 100px;
     /* minimum width */
@@ -290,6 +283,9 @@ html {
     margin-right: 10px; }
     #guide_setting ul {
       font-size: 90%; }
+      #guide_setting ul img {
+        width: 200px;
+        height: auto; }
 
   #guide_setting2 {
     background: #F8F8FF;
@@ -300,6 +296,9 @@ html {
     right: 0px; }
     #guide_setting2 ul {
       font-size: 90%; }
+      #guide_setting2 ul img {
+        width: 200px;
+        height: auto; }
 
   .side_style {
     background: white;
