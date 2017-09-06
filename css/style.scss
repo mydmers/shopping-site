@@ -198,26 +198,19 @@ figcaption {
   }
     
   .search {
-    text-align:center;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top:15px;
-    margin-bottom:1px;
-
+    display:table-cell;
   }
     
   input{
-    background-color: #D3D3D3;//LightGrey
-    width:100%;
+    margin-bottom:2px;
     }
 
-  .input_type{
+  input.input_type{
+    background-color:#D3D3D3;//LightGrey
     background-image:url("../images/top/search_icon.png");
     background-repeat: no-repeat;
     background-position: center right;
-    margin-right:auto;
-    margin-left:auto;
-    text-align:left;
+    width:100%;
   }
 //input.type end
 //side_menu start
@@ -493,23 +486,23 @@ figcaption {
     margin-bottom:0;
   }
     
-  .search {
-    text-align:center;
-    margin-top:1%;
-    margin-bottom:0px;
+  #search {
+    display:table-cell;
+    margin-left:auto;
+    margin-right:auto;
   }
     
   input{
-    background-color:#D3D3D3;//LightGrey
-    width:auto;
     margin-bottom:2px;
+//        margin-left:10px;
     }
 
-  .input_type{
+  input.input_type{
+    background-color:#D3D3D3;//LightGrey
     background-image:url("../images/top/search_icon.png");
     background-repeat: no-repeat;
     background-position: center right;
-    text-align:left;
+    width:100%;
   }
 //input.type end  
 //side_menu start
@@ -532,9 +525,9 @@ figcaption {
    	 background:white;
    	 margin-top: 0px;
    	 margin-bottom:0px;
-   	 padding-top:7px;
+   	 padding-top:10px;
    	 padding-bottom:0px;
-   	 height:30px;
+   	 height:20px;
 
     a{
       color:black;
@@ -550,9 +543,9 @@ figcaption {
    	 background:white;
    	 margin-top: 0px;
    	 margin-bottom:0px;
-   	 padding-top:7px;
+   	 padding-top:10px;
    	 padding-bottom:0px;
-   	 height:30px;
+   	 height:20px;
 
     a{
       color:black;
@@ -609,6 +602,40 @@ div.arrow_style{
   opacity: 0.6;
 }
 //footer_style end
+
+//------------------products.html start------------------
+.product_name {
+  display:inline;
+  font-weight:bold;
+  font-size:14;
+  text-align:left;
+}
+.product_name2 {
+  display:inline;
+  text-align:right;
+}
+
+#display_img img {
+  width: 300px;
+  margin-top:1%;
+  margin-right:1%;
+  padding:0px;
+  float:left;
+}
+
+#list_img li {
+  margin:1%;
+  list-style:none;
+  }
+
+#list_img li img {
+    margin:1%;
+    width: 50px;
+    float:left;
+    cursor: pointer;
+  }
+
+//------------------products.html end------------------
 
 }
 //-------------min-width: pc end-------------
