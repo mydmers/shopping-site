@@ -187,7 +187,6 @@ figcaption {
     width:300px;
     }
 //shopping_guide end 
-
 //sidebar start
 .side_style{
   background:white;
@@ -195,7 +194,7 @@ figcaption {
   
 //input.type start
   .input_image {
-  display:none;
+    display:none;
   }
     
   .search {
@@ -220,7 +219,7 @@ figcaption {
     margin-left:auto;
     text-align:left;
   }
-
+//input.type end
 //side_menu start
 #side_menu{
 
@@ -480,61 +479,61 @@ figcaption {
     }
   }
 //shopping_guide end
-
 //sidebar start
 .side_style{
   background:white;
   margin-right:0px;
   padding-right:0%;
-  
-//side_menu start
-#side_menu{
+}
 
 //input.type start
-  .input_image {
-    margin-left:10%;
+  img.input_image {
+    margin-left:5%;
     margin-top:10%;
-    margin-bottom:5%;
+    margin-bottom:0;
   }
     
   .search {
     text-align:center;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top:15px;
-    margin-bottom:1px;
+    margin-top:1%;
+    margin-bottom:0px;
   }
     
   input{
-//    background-color: #D3D3D3;//LightGrey
+    background-color:#D3D3D3;//LightGrey
     width:auto;
+    margin-bottom:2px;
     }
 
   .input_type{
     background-image:url("../images/top/search_icon.png");
-    background-color: #D3D3D3;//LightGrey
     background-repeat: no-repeat;
     background-position: center right;
-    margin-right:auto;
-    margin-left:auto;
     text-align:left;
   }
+//input.type end  
+//side_menu start
+#side_menu{
 
   .side_color{
     background-color: #696969;//DimGray
     width:100%;
     color:white;
-    margin-top:2px;
+    margin-top:3px;
     margin-right:0px;
     margin-left:0px;
+    margin-bottom:0px;
     padding:0px;
 
   ul.side_menu_toggle1 {
   	display: none;
-  
+
   	li{
    	 background:white;
-   	 margin-top:0px;
+   	 margin-top: 0px;
+   	 margin-bottom:0px;
+   	 padding-top:7px;
+   	 padding-bottom:0px;
    	 height:30px;
 
     a{
@@ -549,7 +548,10 @@ figcaption {
   
  	li{
    	 background:white;
-   	 margin-top:0px;
+   	 margin-top: 0px;
+   	 margin-bottom:0px;
+   	 padding-top:7px;
+   	 padding-bottom:0px;
    	 height:30px;
 
     a{
@@ -558,7 +560,6 @@ figcaption {
       }
     }
   }
-
 
   figure.caption_style{
   	width:auto;
@@ -579,11 +580,9 @@ figcaption {
       }
     }
   }
+}
 //side_menu end
-}
 //sidebar end
-}
-
 //footer_style start
 
 div.arrow_style{
