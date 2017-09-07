@@ -117,8 +117,8 @@ html {
     background: white; }
     .side_style .input_image {
       display: none; }
-    .side_style .search {
-      display: table-cell; }
+    .side_style #search {
+      text-align: center; }
     .side_style input {
       margin-bottom: 2px; }
     .side_style input.input_type {
@@ -126,7 +126,7 @@ html {
       background-image: url("../images/top/search_icon.png");
       background-repeat: no-repeat;
       background-position: center right;
-      width: 100%; }
+      width: 80%; }
     .side_style #side_menu ul.side_menu_toggle1 {
       display: none; }
       .side_style #side_menu ul.side_menu_toggle1 li {
@@ -305,9 +305,7 @@ html {
     margin-bottom: 0; }
 
   #search {
-    display: table-cell;
-    margin-left: auto;
-    margin-right: auto; }
+    text-align: center; }
 
   input {
     margin-bottom: 2px; }
@@ -317,7 +315,7 @@ html {
     background-image: url("../images/top/search_icon.png");
     background-repeat: no-repeat;
     background-position: center right;
-    width: 100%; }
+    width: 80%; }
 
   #side_menu .side_color {
     background-color: #696969;

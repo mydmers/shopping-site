@@ -197,8 +197,8 @@ figcaption {
     display:none;
   }
     
-  .search {
-    display:table-cell;
+  #search {
+    text-align:center;
   }
     
   input{
@@ -210,7 +210,7 @@ figcaption {
     background-image:url("../images/top/search_icon.png");
     background-repeat: no-repeat;
     background-position: center right;
-    width:100%;
+    width:80%;
   }
 //input.type end
 //side_menu start
@@ -485,16 +485,13 @@ figcaption {
     margin-top:10%;
     margin-bottom:0;
   }
-    
-  #search {
-    display:table-cell;
-    margin-left:auto;
-    margin-right:auto;
+  
+  #search{
+    text-align: center;
   }
     
   input{
     margin-bottom:2px;
-//        margin-left:10px;
     }
 
   input.input_type{
@@ -502,7 +499,7 @@ figcaption {
     background-image:url("../images/top/search_icon.png");
     background-repeat: no-repeat;
     background-position: center right;
-    width:100%;
+    width:80%;
   }
 //input.type end  
 //side_menu start
