@@ -6,16 +6,18 @@ html {
   min-width: 550px;
   max-width: 1089px;
   width: auto;
-  padding: 5%; }
+  padding: 5% 10% 5% 10%;
+  margin: 0px; }
 
 .bg {
-  background-color: #F0F8FF; }
+  background-color: #f8f8f6; }
 
 @media (max-width: 549px) {
   header #header_in {
     padding-top: 10px;
     padding-bottom: 4px;
-    text-align: center; }
+    text-align: center;
+    padding: 0px; }
     header #header_in .sp_navi {
       text-align: center; }
     header #header_in div.logo.a.img .clearfix::after {
@@ -254,28 +256,38 @@ html {
   .c1 {
     background-color: #D3D3D3; } }
 @media (min-width: 550px) {
-  header #header_in {
-    padding-top: 10px;
-    padding-bottom: 4px;
-    padding: 15px 0 10px 0; }
-  header .sp_navi {
-    display: none; }
-  header .pc_navi_li {
-    margin: 0;
-    padding: 0; }
-    header .pc_navi_li li {
-      list-style: none;
-      margin: 5px 0 0 0;
-      padding: 0; }
-      header .pc_navi_li li a {
+  header {
+    padding: 0px;
+    margin: 0px; }
+    header #header_in {
+      padding: 0px;
+      margin: 0px; }
+    header div.logo {
+      padding: 0px;
+      margin: 0px; }
+    header .sp_navi {
+      display: none; }
+    header div.pc_navi {
+      width: 450px;
+      padding: 20px;
+      margin: 20px auto;
+      border: 1px #ccc solid; }
+    header ul.pc_navi_li {
+      margin: 0;
+      padding: 0;
+      text-align: right; }
+    header li {
+      display: inline-block;
+      padding: 0 10px; }
+      header li a {
         color: #626262;
         text-decoration: none;
         font-weight: bold;
         font-size: 14px;
         font-size: 1.4rem;
         float: left;
-        padding-right: 10px; }
-      header .pc_navi_li li a:hover {
+        padding-right: 0px; }
+      header li a:hover {
         color: #42b9d0; }
 
   .breadcrumbs {
@@ -328,7 +340,7 @@ html {
     margin: 0px; }
 
   #shopping_guide {
-    background-color: #F0F8FF;
+    background-color: #f8f8f6;
     position: relative;
     width: 500px;
     height: 300px;
