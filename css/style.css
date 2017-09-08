@@ -188,7 +188,57 @@ html {
     font-size: 12px;
     filter: alpha(opacity=60);
     -moz-opacity: 0.6;
-    opacity: 0.6; } }
+    opacity: 0.6; }
+
+  .product_name {
+    display: inline;
+    font-weight: bold;
+    font-size: 14;
+    float: left; }
+
+  .product_name2 {
+    display: inline;
+    float: right; }
+
+  .product_name3 {
+    display: inline;
+    font-weight: bold;
+    font-size: 14; }
+
+  #display_img img {
+    width: 300px;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding: 0px;
+    float: left; }
+
+  #list_img li {
+    margin: 1%;
+    list-style: none; }
+
+  #list_img li img {
+    margin: 1%;
+    width: 50px;
+    float: left;
+    cursor: pointer; }
+
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+  table {
+    margin-right: auto;
+    margin-left: auto; }
+    table tr.t2 {
+      border-bottom: 1px solid black;
+      border: solid 2px; }
+      table tr.t2 td.t2 {
+        width: 100px;
+        text-align: center; }
+
+  .c1 {
+    background-color: #D3D3D3; } }
 @media (min-width: 550px) {
   header #header_in {
     padding-top: 10px;
@@ -427,9 +477,20 @@ html {
     table tr.t2 {
       border-bottom: 1px solid black;
       border: solid 2px; }
-      table tr.t2 td.t2 {
+      table tr.t2 td.t3 {
         width: 100px;
         text-align: center; }
+    table th.t4 {
+      width: 100px;
+      height: 50px; }
+    table td.t5 {
+      width: 200px;
+      height: 50px; }
+    table td.t6 {
+      width: 200px;
+      height: 50px;
+      border-top: hidden;
+      border-bottom: hidden; }
 
   .c1 {
     background-color: #D3D3D3; } }
