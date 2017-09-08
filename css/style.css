@@ -6,7 +6,7 @@ html {
   min-width: 550px;
   max-width: 1089px;
   width: auto;
-  padding: 5% 10% 5% 10%;
+  padding: 5% 50px 5% 50px;
   margin: 0px; }
 
 .bg {
@@ -257,7 +257,7 @@ html {
     background-color: #D3D3D3; } }
 @media (min-width: 550px) {
   header {
-    padding: 0px;
+    padding: 2px;
     margin: 0px; }
     header #header_in {
       padding: 0px;
@@ -268,8 +268,8 @@ html {
     header .sp_navi {
       display: none; }
     header div.pc_navi {
-      width: 450px;
-      padding: 20px;
+      width: auto;
+      padding-right: 0px;
       margin: 20px auto;
       border: 1px #ccc solid; }
     header ul.pc_navi_li {

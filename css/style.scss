@@ -23,7 +23,7 @@ $sp_size : 549px;
   min-width: 550px;//
   max-width: 1089px;//
   width: auto;
-  padding: 5% 10% 5% 10%;
+  padding: 5% 50px 5% 50px;
   margin: 0px;
 }
 
@@ -406,9 +406,9 @@ table{
 //-------------max-width: sp end-------------
 
 //-------------min-width: pc start-------------
-  @media (min-width: $pc_size) {
-  	header{
-      padding: 0px;
+@media (min-width: $pc_size) {
+  header{
+      padding: 2px;
   		margin: 0px;
 
   	#header_in{
@@ -421,24 +421,24 @@ table{
   	  margin: 0px;
   	}
 
-    .sp_navi{
+  .sp_navi{
       display: none;
     }
 
-div.pc_navi{
-    width:450px;
-    padding:20px;
+  div.pc_navi{
+    width:auto;
+    padding-right:0px;
     margin:20px auto;
     border:1px #ccc solid;
-  }
+    }
 
-ul.pc_navi_li{
+  ul.pc_navi_li{
     margin:0;
     padding:0;
     text-align:right;
-  }
+    }
 
-li{
+  li{
     display:inline-block;
     padding:0 10px;
   
@@ -454,9 +454,9 @@ li{
     a:hover{
         color: $blue1;
       }
-  }
+    }
   
-}
+  }
 //header end
 
 //breadcrumbs start
