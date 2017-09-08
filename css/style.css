@@ -58,7 +58,7 @@ html {
     margin-left: auto;
     margin-right: auto; }
   #items ul.items_list {
-    margin: 2%; }
+    float: left; }
     #items ul.items_list li {
       display: inline-block;
       width: 200px;
@@ -66,6 +66,12 @@ html {
       #items ul.items_list li img {
         width: auto;
         height: auto; }
+
+  .items_ttl {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
@@ -171,6 +177,10 @@ html {
         margin-top: 10px;
         text-align: center;
         float: left; }
+      .side_style #side_menu figure.caption_style #t2_left {
+        text-align: left; }
+      .side_style #side_menu figure.caption_style #t2_right {
+        text-align: right; }
 
   div.arrow_style {
     margin-left: auto;
@@ -189,6 +199,10 @@ html {
     filter: alpha(opacity=60);
     -moz-opacity: 0.6;
     opacity: 0.6; }
+
+  .prodcut_start {
+    margin-right: 0px;
+    margin-left: 0px; }
 
   .product_name {
     display: inline;
@@ -275,14 +289,18 @@ html {
 
   #items .items_ttl {
     width: 100%;
-    height: auto; }
-  #items ul.items_list li {
-    display: inline-block;
-    width: 200px;
-    margin: auto; }
-    #items ul.items_list li img {
-      width: auto;
-      height: auto; }
+    height: auto;
+    text-align: center; }
+  #items ul.items_list {
+    text-align: center; }
+    #items ul.items_list li {
+      display: inline-block;
+      width: 150px;
+      margin: 5%;
+      float: left; }
+      #items ul.items_list li img {
+        width: auto;
+        height: auto; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
@@ -433,6 +451,13 @@ html {
     filter: alpha(opacity=60);
     -moz-opacity: 0.6;
     opacity: 0.6; }
+
+  #t_left {
+    text-align: left; }
+
+  .prodcut_start {
+    margin-right: 8%;
+    margin-left: 8%; }
 
   .product_name {
     display: inline;
