@@ -15,9 +15,7 @@ html {
 @media (max-width: 549px) {
   header #header_in {
     padding-top: 10px;
-    padding-bottom: 4px;
-    text-align: center;
-    padding: 0px; }
+    padding-bottom: 4px; }
     header #header_in .sp_navi {
       text-align: center; }
     header #header_in div.logo.a.img .clearfix::after {
@@ -179,9 +177,9 @@ html {
         margin-top: 10px;
         text-align: center;
         float: left; }
-      .side_style #side_menu figure.caption_style #t2_left {
+      .side_style #side_menu figure.caption_style a.t2_left {
         text-align: left; }
-      .side_style #side_menu figure.caption_style #t2_right {
+      .side_style #side_menu figure.caption_style img.t2_right {
         text-align: right; }
 
   div.arrow_style {
@@ -297,7 +295,7 @@ html {
       display: inline; }
 
   .cover_area {
-    margin: 2%; }
+    margin: 0%; }
 
   #items .items_ttl {
     width: 100%;

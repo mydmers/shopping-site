@@ -38,8 +38,6 @@ $sp_size : 549px;
   	  #header_in{
     		padding-top: 10px;
     		padding-bottom:4px;
-    		text-align:center;
-    		padding:0px;
   		
         .sp_navi {
           text-align:center;
@@ -292,14 +290,14 @@ ul.side_menu_toggle2 {
       float:left;
       }
       
-  #t2_left{
+  a.t2_left{
     text-align:left;
   }
   
-  #t2_right{
+  img.t2_right{
     text-align:right;
   }
-    }
+}
 //side_menu end
 }
 //sidebar end
@@ -471,9 +469,9 @@ table{
 //breadcrumbs end
 
 
-//cover start
+// start
 	.cover_area{
-		margin:2%;
+		margin:0%;
 	}
 
 //items start 
