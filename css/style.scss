@@ -394,7 +394,6 @@ table{
 
 
 //------------------products.html end------------------
-}
 
 .btn {
     width:auto;
@@ -406,18 +405,21 @@ table{
     padding:8px 0 10px;
     color:#333;
     border:1px solid #333;
-}
+    }
 
-.t2_left{
-    text-align:left;
+.t2_left {
+    display:inline;
   }
-  
+.t2_right:after{
+  content: '';
+  display: block;
+  clear: both;
+  } 
 .t2_right{
-    text-align:right;
+  float:right;
   }
 
-
-
+}
 //-------------max-width: sp end-------------
 
 //-------------min-width: pc start-------------
@@ -632,7 +634,7 @@ figcaption {
     margin-right:0px;
     margin-left:0px;
     margin-bottom:0px;
-    padding:0px;
+    padding:0px 0px 0px 0px;
 
   ul.side_menu_toggle1 {
   	display: none;
@@ -815,9 +817,33 @@ table{
   border:1px #D3D3D3 solid;
 }
 //table end
-
-
 //------------------products.html end------------------
+
+.btn {
+    width:auto;
+    font-size:24px;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#333;
+    border:1px solid #333;
+}
+
+.t2_left {
+    display:inline;
+  }
+  
+.t2_right:after{
+  content: '';
+  display: block;
+  clear: both;
+          } 
+.t2_right{
+  float:right;
+}
+
 
 }
 //-------------min-width: pc end-------------
