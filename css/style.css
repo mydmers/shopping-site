@@ -140,8 +140,11 @@ f
       display: none; }
       .side_style #side_menu ul.side_menu_toggle1 li {
         background: white;
-        margin: 0px;
-        height: 30px; }
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        height: 20px; }
         .side_style #side_menu ul.side_menu_toggle1 li a {
           color: black;
           text-decoration: none; }
@@ -149,8 +152,11 @@ f
       display: none; }
       .side_style #side_menu ul.side_menu_toggle2 li {
         background: white;
-        margin: 0px;
-        height: 30px; }
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        height: 20px; }
         .side_style #side_menu ul.side_menu_toggle2 li a {
           color: black;
           text-decoration: none; }
