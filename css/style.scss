@@ -141,18 +141,18 @@ $DimGray : #696969;f
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
     display: table;
-    width: 100px; /* minimum width */
+    width: 150px; /* minimum width */
     *width: auto; /* for IE7 and below */
     margin:2px;
+    }
     
 /* ▼画像に対する装飾 */
-    img {
+figure.img {
       display: block;          /* 余計な余白が出ないようにする */
       margin: 0px; /* 周りに2pxの余白を追加 */
       margin-left:auto;
       margin-right:auto;
     }
-  }
   
 /* ▼キャプションに対する装飾 */
 figcaption {
@@ -524,19 +524,18 @@ table{
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
   display:inline-block;
-  display: table;
-  width: 100px; /* minimum width */
-  *width: auto; /* for IE7 and below */
-  margin: 0px;
+  width: 150px; /* minimum width */
   padding:3px;
-    
+  margin: 10px;
+  }    
 /* ▼画像に対する装飾 */
-  img {
+  figure.img {
     display: block;          /* 余計な余白が出ないようにする */
-    margin: 0px; /* 周りに2pxの余白を追加 */
+    margin: 20px; /* 周りに2pxの余白を追加 */
+    padding:2px;
+    width: 50px;
   }
-}
-  
+
 /* ▼キャプションに対する装飾 */
 figcaption {
     font-size: 0.9em;        /* 文字サイズを90%に */

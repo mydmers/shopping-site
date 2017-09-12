@@ -73,19 +73,20 @@ f
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
     display: table;
-    width: 100px;
+    width: 150px;
     /* minimum width */
     *width: auto;
     /* for IE7 and below */
-    margin: 2px;
-    /* ▼画像に対する装飾 */ }
-    figure img {
-      display: block;
-      /* 余計な余白が出ないようにする */
-      margin: 0px;
-      /* 周りに2pxの余白を追加 */
-      margin-left: auto;
-      margin-right: auto; }
+    margin: 2px; }
+
+  /* ▼画像に対する装飾 */
+  figure.img {
+    display: block;
+    /* 余計な余白が出ないようにする */
+    margin: 0px;
+    /* 周りに2pxの余白を追加 */
+    margin-left: auto;
+    margin-right: auto; }
 
   /* ▼キャプションに対する装飾 */
   figcaption {
@@ -336,19 +337,19 @@ f
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
     display: inline-block;
-    display: table;
-    width: 100px;
+    width: 150px;
     /* minimum width */
-    *width: auto;
-    /* for IE7 and below */
-    margin: 0px;
     padding: 3px;
-    /* ▼画像に対する装飾 */ }
-    figure img {
-      display: block;
-      /* 余計な余白が出ないようにする */
-      margin: 0px;
-      /* 周りに2pxの余白を追加 */ }
+    margin: 10px; }
+
+  /* ▼画像に対する装飾 */
+  figure.img {
+    display: block;
+    /* 余計な余白が出ないようにする */
+    margin: 20px;
+    /* 周りに2pxの余白を追加 */
+    padding: 2px;
+    width: 50px; }
 
   /* ▼キャプションに対する装飾 */
   figcaption {
