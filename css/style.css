@@ -7,8 +7,8 @@ f
   min-width: 550px;
   max-width: 1089px;
   width: auto;
-  padding: 5% 50px 5% 50px;
-  margin: 0px; }
+  padding: 50px 50px 50px 50px;
+  margin: 30px; }
 
 .bg {
   background-color: #f8f8f6; }
@@ -69,12 +69,6 @@ f
       #items ul.items_list li img {
         width: auto;
         height: auto; }
-
-  .items_ttl {
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
@@ -561,25 +555,26 @@ f
     border: 1px #D3D3D3 solid; }
 
   .btn {
-    width: auto;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: normal;
     text-decoration: none;
     display: block;
     text-align: center;
-    padding: 8px 0 10px;
-    color: #333;
-    border: 1px solid #333; }
+    padding: 5px 30px;
+    background-color: #847d6a;
+    color: white;
+    border: 1px solid #333;
+    margin: inherit; }
 
   .t2_left {
     display: inline; }
 
+  .t2_right {
+    float: right; }
+
   .t2_right:after {
     content: '';
     display: block;
-    clear: both; }
-
-  .t2_right {
-    float: right; } }
+    clear: both; } }
 
 /*# sourceMappingURL=style.css.map */
