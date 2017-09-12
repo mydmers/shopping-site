@@ -507,7 +507,7 @@ f
     font-size: 14; }
 
   #display_img img {
-    width: 500px;
+    width: 450px;
     margin-top: 1%;
     margin-right: 1%;
     padding: 0px;
@@ -519,7 +519,7 @@ f
 
   #list_img li img {
     margin: 1%;
-    width: 80px;
+    width: 100px;
     float: left;
     cursor: pointer; }
 
