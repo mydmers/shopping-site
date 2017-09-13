@@ -131,51 +131,51 @@ f
       background-repeat: no-repeat;
       background-position: center right;
       width: 80%; }
-    .side_style #side_menu ul.side_menu_toggle1 {
+    .side_style ul.side_menu_toggle1 {
       display: none; }
-      .side_style #side_menu ul.side_menu_toggle1 li {
+      .side_style ul.side_menu_toggle1 li {
         background: white;
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
         padding-bottom: 0px;
         height: 20px; }
-        .side_style #side_menu ul.side_menu_toggle1 li a {
+        .side_style ul.side_menu_toggle1 li a {
           color: black;
           text-decoration: none; }
-    .side_style #side_menu ul.side_menu_toggle2 {
+    .side_style ul.side_menu_toggle2 {
       display: none; }
-      .side_style #side_menu ul.side_menu_toggle2 li {
+      .side_style ul.side_menu_toggle2 li {
         background: white;
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
         padding-bottom: 0px;
         height: 20px; }
-        .side_style #side_menu ul.side_menu_toggle2 li a {
+        .side_style ul.side_menu_toggle2 li a {
           color: black;
           text-decoration: none; }
-    .side_style #side_menu .side_color {
+    .side_style .side_color {
       background-color: #696969;
       width: 100%;
       color: white;
       margin-top: 2px;
       margin-right: 0px;
       margin-left: 0px; }
-    .side_style #side_menu .side_color.a {
+    .side_style .side_color.a {
       text-decoration: blink;
       width: 100%;
       margin: 2px 0 0 0;
       margin-right: 0px;
       margin-left: 0px; }
-    .side_style #side_menu figure.caption_style {
+    .side_style figure.caption_style {
       width: 100%;
       background: white;
       color: black;
       margin-top: 2px;
       margin-right: 0px;
       margin-left: 0px; }
-      .side_style #side_menu figure.caption_style img {
+      .side_style figure.caption_style img {
         margin-right: auto;
         margin-left: auto;
         margin-top: 10px;
@@ -343,19 +343,20 @@ f
     margin: 10px; }
 
   /* ▼画像に対する装飾 */
-  figure.img {
+  figure.caption_style img {
     display: block;
     /* 余計な余白が出ないようにする */
     margin: 20px;
     /* 周りに2pxの余白を追加 */
     padding: 2px;
-    width: 50px; }
+    width: 50px;
+    text-align: center; }
 
   /* ▼キャプションに対する装飾 */
   figcaption {
     font-size: 0.9em;
     /* 文字サイズを90%に */
-    text-align: left;
+    text-align: center;
     /* 中身をセンタリング */
     margin: 0px; }
 
@@ -417,52 +418,54 @@ f
     background-position: center right;
     width: 80%; }
 
-  #side_menu .side_color {
+  .side_color {
     background-color: #696969;
     width: 100%;
     color: white;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
     padding: 0px 0px 0px 0px; }
-    #side_menu .side_color ul.side_menu_toggle1 {
+    .side_color ul.side_menu_toggle1 {
       display: none; }
-      #side_menu .side_color ul.side_menu_toggle1 li {
+      .side_color ul.side_menu_toggle1 li {
         background: white;
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
         padding-bottom: 0px;
         height: 20px; }
-        #side_menu .side_color ul.side_menu_toggle1 li a {
+        .side_color ul.side_menu_toggle1 li a {
           color: black;
           text-decoration: none; }
-    #side_menu .side_color ul.side_menu_toggle2 {
+    .side_color ul.side_menu_toggle2 {
       display: none; }
-      #side_menu .side_color ul.side_menu_toggle2 li {
+      .side_color ul.side_menu_toggle2 li {
         background: white;
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
         padding-bottom: 0px;
         height: 20px; }
-        #side_menu .side_color ul.side_menu_toggle2 li a {
+        .side_color ul.side_menu_toggle2 li a {
           color: black;
           text-decoration: none; }
-    #side_menu .side_color figure.caption_style {
+    .side_color figure.caption_style {
       width: auto;
       height: auto;
       background: white;
       color: black;
       margin-top: 2px;
       margin-right: 0px;
-      margin-left: 0px; }
-      #side_menu .side_color figure.caption_style img {
+      margin-left: 0px;
+      margin-bottom: 0px; }
+      .side_color figure.caption_style figcaption {
+        text-align: left; }
+      .side_color figure.caption_style img {
         margin-right: auto;
         margin-left: auto;
         margin-top: 10px;
-        text-align: center;
         width: auto;
         height: auto; }
 

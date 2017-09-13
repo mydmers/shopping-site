@@ -220,7 +220,6 @@ figcaption {
 //input.type end
 
 //side_menu start
-#side_menu{
 
 ul.side_menu_toggle1 {
   display: none;
@@ -290,7 +289,7 @@ ul.side_menu_toggle2 {
       text-align:center;
       float:left;
       }
-    }
+
 //side_menu end
 }
 //sidebar end
@@ -529,17 +528,18 @@ figure {
   margin: 10px;
   }    
 /* ▼画像に対する装飾 */
-  figure.img {
+  figure.caption_style img {
     display: block;          /* 余計な余白が出ないようにする */
     margin: 20px; /* 周りに2pxの余白を追加 */
     padding:2px;
     width: 50px;
+    text-align:center;
   }
 
 /* ▼キャプションに対する装飾 */
 figcaption {
     font-size: 0.9em;        /* 文字サイズを90%に */
-    text-align: left;      /* 中身をセンタリング */
+    text-align: center;      /* 中身をセンタリング */
     margin:0px;
     }   
 //figure end  
@@ -622,17 +622,16 @@ figcaption {
   }
 //input.type end  
 //side_menu start
-#side_menu{
 
   .side_color{
     background-color: $DimGray;
     width:100%;
     color:white;
-    margin-top:3px;
+    margin-top:5px;
     margin-right:0px;
     margin-left:0px;
     margin-bottom:0px;
-    padding:0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 
   ul.side_menu_toggle1 {
   	display: none;
@@ -678,21 +677,22 @@ figcaption {
     margin-top:2px;
     margin-right:0px;
     margin-left:0px;
+    margin-bottom:0px;
+    
+  figcaption {
+    text-align:left;
+  }
     
     img {
       margin-right:auto;
       margin-left:auto;
       margin-top:10px;
-      text-align:center;
       width:auto;
       height:auto;
       }
     }
+    
   }
-  
-  
-  
-}
 //side_menu end
 //sidebar end
 //footer_style start
