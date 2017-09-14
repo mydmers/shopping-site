@@ -2,17 +2,12 @@
 html {
   font-size: 62.5%; }
 
-f
-.body_size {
-  min-width: 550px;
-  margin: auto;
-  padding: 50px 100px 50px 100px;
-  width: 900px; }
-
-.bg {
-  background-color: #f8f8f6; }
-
 @media (max-width: 549px) {
+  body {
+    margin: 5px 10px 5px 10px;
+    background-color: #f8f8f6;
+    width: 500px; }
+
   header #header_in {
     padding-top: 10px;
     padding-bottom: 4px; }
@@ -52,26 +47,31 @@ f
   .cover_area {
     margin: 2%; }
 
+  .cover_area_pc {
+    display: none; }
+
+  img.cover_area_sp {
+    width: auto;
+    height: auto; }
+
   .u-max-full-width {
-    max-width: 100%;
-    box-sizing: border-box; }
+    max-width: 400px;
+    -ms-interpolation-mode: bicubic; }
 
   #items .items_ttl {
-    width: auto;
     height: auto;
-    margin-left: auto;
-    margin-right: auto; }
+    text-align: center;
+    padding: 1px; }
   #items ul.items_list {
-    float: left; }
+    display: block;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto; }
     #items ul.items_list li {
       display: inline-block;
-      width: 200px;
-      border: 1px;
-      border-color: white;
-      margin: 5px; }
-      #items ul.items_list li img {
-        width: auto;
-        height: auto; }
+      width: 50%;
+      float: left;
+      background: #fff; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
@@ -258,27 +258,33 @@ f
     background-color: #D3D3D3; }
 
   .btn {
-    width: auto;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: normal;
     text-decoration: none;
     display: block;
     text-align: center;
-    padding: 8px 0 10px;
-    color: #333;
-    border: 1px solid #333; }
+    padding: 5px 30px;
+    background-color: #847d6a;
+    color: white;
+    border: 1px solid #333;
+    margin: inherit; }
 
   .t2_left {
     display: inline; }
 
+  .t2_right {
+    float: right; }
+
   .t2_right:after {
     content: '';
     display: block;
-    clear: both; }
-
-  .t2_right {
-    float: right; } }
+    clear: both; } }
 @media (min-width: 550px) {
+  body {
+    margin: 30px 90px 30px 90px;
+    background-color: #f8f8f6;
+    width: 1000px; }
+
   header {
     padding: 2px;
     margin: 0px; }
@@ -320,33 +326,41 @@ f
       display: inline; }
 
   .cover_area {
-    margin: 0%; }
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto; }
+
+  .cover_area_pc {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .cover_area_sp {
+    display: none; }
 
   .u-max-full-width {
     max-width: 100%;
     box-sizing: border-box; }
 
   #items .items_ttl {
-    width: 100%;
     height: auto;
-    text-align: center; }
+    text-align: center;
+    padding: 1px; }
   #items ul.items_list {
-    text-align: center; }
+    display: block;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto; }
     #items ul.items_list li {
       display: inline-block;
-      width: 150px;
-      margin: 5%;
-      float: left; }
-      #items ul.items_list li img {
-        width: auto;
-        height: auto; }
+      width: 200px;
+      float: left;
+      background: #fff; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {
     display: inline-block;
-    width: 150px;
-    /* minimum width */
-    padding: 3px;
     margin: 10px; }
 
   /* ▼画像に対する装飾 */
@@ -355,8 +369,7 @@ f
     /* 余計な余白が出ないようにする */
     margin: 20px;
     /* 周りに2pxの余白を追加 */
-    padding: 2px;
-    width: 50px;
+    width: 180px;
     text-align: center; }
 
   /* ▼キャプションに対する装飾 */
@@ -366,42 +379,42 @@ f
     text-align: center;
     /* 中身をセンタリング */
     margin: 0px;
-    text-align: left; }
+    text-align: left;
+    padding: 5px; }
 
   #shopping_guide {
     background-color: #f8f8f6;
     position: relative;
-    width: 500px;
+    width: 550px;
     height: 300px;
     margin-left: auto;
     margin-right: auto; }
 
   #guide_setting {
     background-color: #fff;
-    width: 245px;
+    width: 250px;
     height: 250px;
     position: absolute;
     top: 0px;
-    left: 0px;
-    margin-right: 10px; }
-    #guide_setting ul {
-      font-size: 90%; }
-      #guide_setting ul img {
-        width: 200px;
-        height: auto; }
+    left: 0px; }
+    #guide_setting dt.shopping_guide_font {
+      color: #756c56; }
+    #guide_setting dd img {
+      width: 200px;
+      height: auto; }
 
   #guide_setting2 {
     background: #fff;
     position: absolute;
-    width: 245px;
+    width: 250px;
     height: 250px;
     top: 0px;
     right: 0px; }
-    #guide_setting2 ul {
-      font-size: 90%; }
-      #guide_setting2 ul img {
-        width: 200px;
-        height: auto; }
+    #guide_setting2 dt.shopping_guide_font {
+      color: #756c56; }
+    #guide_setting2 dd img {
+      width: 200px;
+      height: auto; }
 
   .side_style {
     background: white;
@@ -520,7 +533,7 @@ f
     font-size: 14; }
 
   #display_img img {
-    width: 500px;
+    width: 400px;
     margin-top: 1%;
     margin-right: 1%;
     padding: 0px;
@@ -542,28 +555,29 @@ f
     clear: both; }
 
   table {
-    margin-right: auto;
-    margin-left: auto; }
+    margin-right: 0px;
+    margin-left: 0px; }
     table tr.t2 {
       border-bottom: 1px solid black;
       border: solid 2px; }
       table tr.t2 td.t3 {
-        width: 100px;
+        width: 100vw;
         text-align: center; }
     table th.t4 {
-      width: 100px;
+      width: 100vw;
       height: 50px; }
     table td.t5 {
-      width: 200px;
-      height: 50px; }
+      width: 100vm;
+      height: 50px;
+      text-align: left; }
     table td.t6 {
-      width: 200px;
+      width: 100vm;
       height: 50px;
       border-top: hidden;
       border-bottom: hidden; }
 
   .c1 {
-    background-color: #D3D3D3; }
+    background-color: #f6f6f2; }
 
   .c2 {
     border: 1px #D3D3D3 solid; }

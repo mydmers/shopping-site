@@ -15,26 +15,20 @@ $blue2 : #339fd1;
 $base_color : #f8f8f6;
 $pc_size : 550px;
 $sp_size : 549px;
-$DimGray : #696969;f
+$DimGray : #696969;
+$shopping_guide_font : #756c56;
 
 //---------------------head end--------------------
-
-
-.body_size {
-  min-width: 550px;//
-//  max-width: 700px;//
-  margin: auto;
-  padding: 50px 100px 50px 100px;
-//  margin: 30px;
-  width: 900px;
-}
-
 //---------------------body start--------------------
-.bg{
-  background-color: $base_color;
-}
 //-------------max-width: sp start-------------
   @media (max-width: $sp_size) {
+    
+  body {
+    margin: 5px 10px 5px 10px;
+    background-color: #f8f8f6;
+    width: 500px;
+    }
+    
   	header{
   		
   	  #header_in{
@@ -104,43 +98,49 @@ $DimGray : #696969;f
 
 //cover start
   .cover_area{
-      margin:2%;
+    margin:2%;
     }
+    
+  .cover_area_pc {
+    display:none
+  }
+  
+  img.cover_area_sp {
+    width:auto;
+    height:auto;
+  }
     
   .u-max-full-width {
-    max-width: 100%;
-    box-sizing: border-box;
+    max-width: 400px;
+//    max-height: 180px;
+    -ms-interpolation-mode: bicubic;
     }
  
-//items start   
+//items start 
   #items{
-    
+
     .items_ttl{
-      width:auto;
       height:auto;
-      margin-left:auto;
-      margin-right:auto;
+      text-align:center;
+      padding:1px;
        }
        
     ul.items_list{
-      float:left;
-      
+      display:block;
+      width:400px;
+      margin-right:auto;
+      margin-left:auto;
+
       li{
         display:inline-block;
-        width:200px;
-        border:1px;
-        border-color: white;
-        margin:5px;
+        width:50%;
+        float:left;
+        background: #fff;
         
-        img {
-          width:auto;
-          height:auto;
-          }
         }
       
       }
     }
-
 //items end
 
 //figure start
@@ -400,34 +400,46 @@ table{
 //------------------products.html end------------------
 
 .btn {
-    width:auto;
-    font-size:24px;
-    font-weight:bold;
+    font-size:12px;
+    font-weight:normal;
     text-decoration:none;
     display:block;
     text-align:center;
-    padding:8px 0 10px;
-    color:#333;
+    padding:5px 30px;
+    background-color:#847d6a;
+    color:white;
     border:1px solid #333;
-    }
+    margin:inherit;
+}
 
 .t2_left {
     display:inline;
   }
+  
+.t2_right{
+  float:right;
+}
+  
 .t2_right:after{
   content: '';
   display: block;
   clear: both;
   } 
-.t2_right{
-  float:right;
-  }
 
 }
 //-------------max-width: sp end-------------
 
 //-------------min-width: pc start-------------
 @media (min-width: $pc_size) {
+      
+  body {
+    margin: 30px 90px 30px 90px;
+    background-color: #f8f8f6;
+    width: 1000px;
+    
+    }
+    
+
   header{
       padding: 2px;
   		margin: 0px;
@@ -491,11 +503,23 @@ table{
   }
 //breadcrumbs end
 
-
-// start
-	.cover_area{
-		margin:0%;
-	}
+//cover start
+  .cover_area {
+    width:600px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  
+  .cover_area_pc {
+    display:block;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .cover_area_sp {
+    display:none;
+  }
 	
 	.u-max-full-width {
     max-width: 100%;
@@ -506,25 +530,23 @@ table{
   #items{
 
     .items_ttl{
-      width:100%;
       height:auto;
       text-align:center;
+      padding:1px;
        }
        
     ul.items_list{
-      text-align:center;
+      display:block;
+      width:600px;
+      margin-right:auto;
+      margin-left:auto;
 
       li{
         display:inline-block;
-        width:150px;
-        margin:5%;
+        width:200px;
         float:left;
-//        background: #ffffff;
+        background: #fff;
         
-        img {
-          width:auto;
-          height:auto;
-        }
         }
       
       }
@@ -535,16 +557,13 @@ table{
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
   display:inline-block;
-  width: 150px; /* minimum width */
-  padding:3px;
   margin: 10px;
   }    
 /* ▼画像に対する装飾 */
   figure.caption_style img {
     display: block;          /* 余計な余白が出ないようにする */
     margin: 20px; /* 周りに2pxの余白を追加 */
-    padding:2px;
-    width: 50px;
+    width: 180px;
     text-align:center;
   }
 
@@ -554,6 +573,7 @@ figcaption {
     text-align: center;      /* 中身をセンタリング */
     margin:0px;
     text-align: left;
+    padding:5px;
     }   
 //figure end  
      
@@ -561,7 +581,7 @@ figcaption {
   #shopping_guide {
     background-color: $base_color;
     position:relative;
-    width:500px;
+    width:550px;
     height:300px;
     margin-left:auto;
     margin-right:auto;
@@ -569,39 +589,38 @@ figcaption {
   
   #guide_setting{
     background-color: #fff;//White
-    width:245px;
+    width:250px;
     height:250px;
     position:absolute;
     top:0px;
     left:0px;
-    margin-right:10px;
 
-    ul {
-      font-size:90%;
+    dt.shopping_guide_font {
+      color: $shopping_guide_font;
+    }
       
-      img {
+    dd img {
          width:200px;
          height:auto;
-      }
-    }
+         }
     }
   
   #guide_setting2{
     background: #fff;//White
     position:absolute;
-    width:245px;
+    width:250px;
     height:250px;
     top:0px;
     right:0px;
     
-    ul {
-      font-size:90%;
+    dt.shopping_guide_font {
+      color: $shopping_guide_font;
+    }
       
-      img {
+    dd img {
          width:200px;
          height:auto;
-      }
-    }
+         }
   }
 //shopping_guide end
 //sidebar start
@@ -764,7 +783,7 @@ div.arrow_style{
 }
 
 #display_img img {
-  width: 500px;
+  width: 400px;
   margin-top:1%;
   margin-right:1%;
   padding:0px;
@@ -791,30 +810,31 @@ div.arrow_style{
 
 //table start
 table{
-  margin-right:auto;
-  margin-left:auto;
+  margin-right:0px;
+  margin-left:0px;
   
   tr.t2{
     border-bottom:1px solid black;
     border:solid 2px;
     
     td.t3{
-      width:100px;
+      width:100vw;
       text-align:center;
     }
   }
   th.t4 {
-    width:100px;
+    width:100vw;
     height:50px;
   }
   
   td.t5 {
-    width:200px;
+    width:100vm;
     height:50px;
+    text-align:left;
   }
-  
+
   td.t6 {
-    width:200px;
+    width:100vm;
     height:50px;
     border-top:hidden;
     border-bottom:hidden;
@@ -823,7 +843,7 @@ table{
 
 
 .c1{
-   background-color: #D3D3D3;//LightGrey
+   background-color: #f6f6f2
 }
 
 .c2 {

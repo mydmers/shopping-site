@@ -93,9 +93,8 @@ $(window).load(function(){
 </head>
 
 <!-- body start -->
-<body class="body_size bg">
-<!-- body_size start-->
-<!--<div class="body_size bg">-->
+<body>
+
 <!-- header start -->
 <header>
   <div id="header_in" class="row">
@@ -222,10 +221,10 @@ $(window).load(function(){
 
 <table border="1" rules="all" style="margin-top:20px;">
   <tr>
-    <th class="c1 footer_style2" style="width:100px;border-bottom:1px solid;">
+    <th class="c1 footer_style2" style="width:20vw;border-bottom:1px solid;">
       カラー
     </th>
-    <td class="footer_style2" style="width:300px;border-bottom:1px solid;">
+    <td class="footer_style2" style="width:70vw;border-bottom:1px solid;">
       説明が入ります説明が入ります説明が入ります
     </td>
   </tr>
@@ -285,32 +284,30 @@ $(window).load(function(){
   <img class="u-max-full-width" src="images/top/title_guide.png" alt="shopping-guide" srcset="images/top_sp/title_guide@2x.png 2x" />      
 </h3>
 
-  <div id="shopping_guide">
-    
-    <div id="guide_setting" class="one-half column">
-      <ul style="list-style-type: square">
-        <h6>お届けについて</h6>
-        <img alt="" src="images/top/otodoke_banner.png">
-        <li>○○運輸<br />
-        送料 ￥000円</li>
-        <li>ゆうパケット<br />
-        ポスト投函となります。日時指定不可</li>
-      </ul>
-    </div>
-
-    <div id="guide_setting2" class="one-half column">
-      <ul style="list-style-type: square">
-        <h6>決済について</h6>
-        <li>カード決済<img alt="" src="images/top/cards.png"></li>
-        <li>代金引換<br />
-          代引き手数料が別途かかります</li>
-        <li>銀行振込<br />
-        <p>お振込み手数料お客様負担<br />
-        ご入金後の発送となります。</p></li>
-      </ul>
-    </div>
-    
+<div id="shopping_guide">
+  <div id="guide_setting" class="one-half column">
+    <dl>
+      <dt class="shopping_guide_font"><h6>お届けについて</h6></dt>
+        <dd><img alt="" src="images/top/otodoke_banner.png" width="200px"></dd>
+      <dt class="shopping_guide_font">■○○運輸</dt>
+        <dd>送料 ￥000円</dd>
+      <dt class="shopping_guide_font">■ゆうパケット</dt>
+        <dd>ポスト投函となります。日時指定不可</dd>
+    </dl>
   </div>
+  <div id="guide_setting2" class="one-half column">
+    <dl>
+      <dt class="shopping_guide_font"><h6>決済について</h6></dt>
+      <dt class="shopping_guide_font">■カード決済</dt>
+        <dd><img alt="" src="images/top/cards.png" width="200px"></dd>
+      <dt class="shopping_guide_font">■代金引換/dt>
+        <dd>代引き手数料が別途かかります</dd>
+      <dt class="shopping_guide_font">■銀行振込</dt>
+        <dd>お振込み手数料お客様負担</dd>
+        <dd>ご入金後の発送となります。</dd>
+    </dl>
+  </div>
+</div>
 <!-- shopping_guide end-->
   </div>
 <!-- 9column_size end-->
