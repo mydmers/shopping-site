@@ -6,8 +6,8 @@ f
 .body_size {
   min-width: 550px;
   margin: auto;
-  padding: 50px 50px 50px 50px;
-  width: 800px; }
+  padding: 50px 100px 50px 100px;
+  width: 900px; }
 
 .bg {
   background-color: #f8f8f6; }
