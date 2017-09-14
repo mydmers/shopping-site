@@ -22,10 +22,11 @@ $DimGray : #696969;f
 
 .body_size {
   min-width: 550px;//
-  max-width: 1089px;//
-  width: auto;
+//  max-width: 700px;//
+  margin: auto;
   padding: 50px 50px 50px 50px;
-  margin: 30px;
+//  margin: 30px;
+  width: 800px;
 }
 
 //---------------------body start--------------------
@@ -102,8 +103,13 @@ $DimGray : #696969;f
 
 
 //cover start
-    .cover_area{
+  .cover_area{
       margin:2%;
+    }
+    
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
     }
  
 //items start   
@@ -320,7 +326,7 @@ div.arrow_style{
 }
 //footer_style end
 //------------------products.html start------------------
-.prodcut_start {
+.product_start {
   margin-right: 0px;
   margin-left: 0px;
 }
@@ -444,7 +450,7 @@ table{
     width:auto;
     padding-right:0px;
     margin:20px auto;
-    border:1px #ccc solid;
+    border: none;
     }
 
   ul.pc_navi_li{
@@ -490,6 +496,11 @@ table{
 	.cover_area{
 		margin:0%;
 	}
+	
+	.u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
+    }
 
 //items start 
   #items{
@@ -508,6 +519,7 @@ table{
         width:150px;
         margin:5%;
         float:left;
+//        background: #ffffff;
         
         img {
           width:auto;
@@ -541,6 +553,7 @@ figcaption {
     font-size: 0.9em;        /* 文字サイズを90%に */
     text-align: center;      /* 中身をセンタリング */
     margin:0px;
+    text-align: left;
     }   
 //figure end  
      
@@ -555,7 +568,7 @@ figcaption {
     }
   
   #guide_setting{
-    background-color: #F8F8FF;//GhostWhite
+    background-color: #fff;//White
     width:245px;
     height:250px;
     position:absolute;
@@ -574,7 +587,7 @@ figcaption {
     }
   
   #guide_setting2{
-    background: #F8F8FF;//GhostWhite
+    background: #fff;//White
     position:absolute;
     width:245px;
     height:250px;
@@ -624,7 +637,7 @@ figcaption {
 //side_menu start
 
   .side_color{
-    background-color: $DimGray;
+    background-color: #857e6a;
     width:100%;
     color:white;
     margin-top:5px;
@@ -726,9 +739,11 @@ div.arrow_style{
 }
 //footer_style end
 //------------------products.html start------------------
-.prodcut_start {
+.product_start {
   margin-right: 8%;
   margin-left: 8%;
+  background-color: #fff;
+  padding: 10px;
 }
 
 .product_name {

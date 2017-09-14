@@ -5,10 +5,9 @@ html {
 f
 .body_size {
   min-width: 550px;
-  max-width: 1089px;
-  width: auto;
+  margin: auto;
   padding: 50px 50px 50px 50px;
-  margin: 30px; }
+  width: 800px; }
 
 .bg {
   background-color: #f8f8f6; }
@@ -52,6 +51,10 @@ f
 
   .cover_area {
     margin: 2%; }
+
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box; }
 
   #items .items_ttl {
     width: auto;
@@ -200,7 +203,7 @@ f
     -moz-opacity: 0.6;
     opacity: 0.6; }
 
-  .prodcut_start {
+  .product_start {
     margin-right: 0px;
     margin-left: 0px; }
 
@@ -291,7 +294,7 @@ f
       width: auto;
       padding-right: 0px;
       margin: 20px auto;
-      border: 1px #ccc solid; }
+      border: none; }
     header ul.pc_navi_li {
       margin: 0;
       padding: 0;
@@ -318,6 +321,10 @@ f
 
   .cover_area {
     margin: 0%; }
+
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box; }
 
   #items .items_ttl {
     width: 100%;
@@ -358,7 +365,8 @@ f
     /* 文字サイズを90%に */
     text-align: center;
     /* 中身をセンタリング */
-    margin: 0px; }
+    margin: 0px;
+    text-align: left; }
 
   #shopping_guide {
     background-color: #f8f8f6;
@@ -369,7 +377,7 @@ f
     margin-right: auto; }
 
   #guide_setting {
-    background-color: #F8F8FF;
+    background-color: #fff;
     width: 245px;
     height: 250px;
     position: absolute;
@@ -383,7 +391,7 @@ f
         height: auto; }
 
   #guide_setting2 {
-    background: #F8F8FF;
+    background: #fff;
     position: absolute;
     width: 245px;
     height: 250px;
@@ -419,7 +427,7 @@ f
     width: 80%; }
 
   .side_color {
-    background-color: #696969;
+    background-color: #857e6a;
     width: 100%;
     color: white;
     margin-top: 5px;
@@ -490,9 +498,11 @@ f
   #t_left {
     text-align: left; }
 
-  .prodcut_start {
+  .product_start {
     margin-right: 8%;
-    margin-left: 8%; }
+    margin-left: 8%;
+    background-color: #fff;
+    padding: 10px; }
 
   .product_name {
     display: inline;
