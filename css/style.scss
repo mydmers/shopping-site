@@ -803,25 +803,33 @@ table{
   tr.t2{
     border-bottom:1px solid black;
     border:solid 2px;
+    margin:0px;
+    padding:0px;
     
-    td.t3{
+  td.t3{
       width:100vw;
       text-align:center;
     }
   }
-  th.t4 {
-    width:100vw;
+}
+
+table {
+  margin-right:0px;
+  margin-left:0px;
+  
+  td.t4 {
+    width:20%;
     height:50px;
   }
   
   td.t5 {
-    width:100vm;
+    width:40%;
     height:50px;
     text-align:left;
   }
 
   td.t6 {
-    width:100vm;
+    width:40%;
     height:50px;
     border-top:hidden;
     border-bottom:hidden;
