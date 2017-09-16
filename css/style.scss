@@ -202,8 +202,8 @@ figcaption {
     background:#F8F8FF;//GhostWhite;
     width:300px;
     }
-//shopping_guide end 
-//sidebar start
+//shopping_guide end sp
+//sidebar start sp
 .side_style{
   background:white;
   }
@@ -228,11 +228,10 @@ figcaption {
     background-position: center right;
     width:80%;
   }
-//input.type end
+//input.type end sp
 //side_menu start_sp
 
   .side_color{
-    background-color: #857e6a;
     width:100%;
     color:white;
     margin-top:5px;
@@ -242,14 +241,6 @@ figcaption {
     padding: 10px;
   }
   
-  .side_color.a {
-    text-decoration:blink;
-    width:100%;
-    margin:2px 0 0 0;
-    margin-right:0px;
-    margin-left:0px;
-    }
-    
   .side_menu_ttl{
     background-color:#857e6a;
     height:auto;
@@ -262,10 +253,10 @@ ul.side_menu_toggle1 {
   li{
    	 background:white;
    	 margin-top: 0px;
-   	 margin-bottom:0px;
-   	 padding-top:10px;
-   	 padding-bottom:0px;
-   	 height:20px;
+   	 margin-bottom: 0px;
+   	 padding-top: 10px;
+   	 padding-bottom: 0px;
+   	 height: 20px;
 
     a{
       color:black;
@@ -310,7 +301,7 @@ ul.side_menu_toggle2 {
     }
 //side_menu end
 //sidebar end
-//------------------products.html start------------------
+//------------------products.html start sp------------------
 .product_start {
   margin-right: 0px;
   margin-left: 0px;
@@ -382,7 +373,7 @@ table{
 //table end
 
 
-//------------------products.html end------------------
+//------------------products.html end sp------------------
 
 .btn {
     font-size:12px;
@@ -411,7 +402,7 @@ table{
   clear: both;
   } 
 
-//footer_style start
+//footer_style start sp
 
 div.arrow_style{
   text-align:right;
@@ -537,7 +528,7 @@ div.arrow_style{
     box-sizing: border-box;
     }
 
-//items start 
+//items start pc
   #items{
 
     .items_ttl{
@@ -565,9 +556,9 @@ div.arrow_style{
         }
       }
     }
-//items end
+//items end pc
 
-//figure start
+//figure start pc
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
   display:inline-block;
@@ -591,7 +582,7 @@ figcaption {
     }   
 //figure end  
      
-//shopping_guide start      
+//shopping_guide start pc
   #shopping_guide {
     background-color: $base_color;
     position:relative;
@@ -637,15 +628,13 @@ figcaption {
          height:auto;
          }
   }
-//shopping_guide end
-//sidebar start
+//shopping_guide end pc
+//sidebar start pc
 .side_style{
   background:white;
-  margin-right:0px;
-  padding-right:0%;
 }
 
-//input.type start
+//input.type start pc
   img.input_image {
     margin-left:5%;
     margin-top:10%;
@@ -667,18 +656,21 @@ figcaption {
     background-position: center right;
     width:80%;
   }
-//input.type end  
+//input.type end pc
 //side_menu start_pc
 
   .side_color{
-      width:100px;
-      padding: 10px;
-      margin-top:5px;
+    width:100%;
+    color:white;
+    margin-top:5px;
+    margin-right:0px;
+    margin-left:0px;
+    margin-bottom:0px;
+    padding: 10px;
   }
     
   .side_menu_ttl{
     background-color: #857e6a;
-    margin: 5px 0;
     height:10px;
     }
 
@@ -689,10 +681,10 @@ figcaption {
   	li{
    	 background:white;
    	 margin-top: 0px;
-   	 margin-bottom:0px;
-   	 padding-top:10px;
-   	 padding-bottom:0px;
-   	 height:20px;
+   	 margin-bottom: 0px;
+   	 padding-top: 10px;
+   	 padding-bottom: 0px;
+   	 height: 20px;
 
     a{
       color:black;
@@ -741,9 +733,9 @@ figcaption {
       height:auto;
       }
     }
-//side_menu end
-//sidebar end
-//------------------products.html start------------------
+//side_menu end pc
+//sidebar end pc
+//------------------products.html start pc------------------
 .product_start {
   margin-right: 8%;
   margin-left: 8%;
@@ -844,7 +836,7 @@ table {
   border:1px #D3D3D3 solid;
 }
 //table end
-//------------------products.html end------------------
+//------------------products.html end pc------------------
 
 .btn {
     font-size:12px;
@@ -873,15 +865,15 @@ table {
   clear: both;
   } 
 
-//footer_style start
+//footer_style start pc
 
 div.arrow_style{
   text-align:right;
 }
 
 
-div ul.footer_style{
-  text-align:center;
+.footer_style{
+//  text-align:center;
   
   li{
     display:inline-block;
@@ -898,7 +890,7 @@ div ul.footer_style{
   opacity: 0.6;
 }
 
-//footer_style end
+//footer_style end pc
 
 }
 //-------------min-width: pc end-------------
