@@ -145,7 +145,6 @@ html {
     width: 80%; }
 
   .side_color {
-    background-color: #857e6a;
     width: 100%;
     color: white;
     margin-top: 5px;
@@ -153,13 +152,6 @@ html {
     margin-left: 0px;
     margin-bottom: 0px;
     padding: 10px; }
-
-  .side_color.a {
-    text-decoration: blink;
-    width: 100%;
-    margin: 2px 0 0 0;
-    margin-right: 0px;
-    margin-left: 0px; }
 
   .side_menu_ttl {
     background-color: #857e6a;
@@ -441,9 +433,7 @@ html {
       height: auto; }
 
   .side_style {
-    background: white;
-    margin-right: 0px;
-    padding-right: 0%; }
+    background: white; }
 
   img.input_image {
     margin-left: 5%;
@@ -464,13 +454,16 @@ html {
     width: 80%; }
 
   .side_color {
-    width: 100px;
-    padding: 10px;
-    margin-top: 5px; }
+    width: 100%;
+    color: white;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 10px; }
 
   .side_menu_ttl {
     background-color: #857e6a;
-    margin: 5px 0;
     height: 10px; }
 
   ul.side_menu_toggle1 {
@@ -620,12 +613,10 @@ html {
   div.arrow_style {
     text-align: right; }
 
-  div ul.footer_style {
-    text-align: center; }
-    div ul.footer_style li {
-      display: inline-block;
-      width: auto;
-      height: auto; }
+  .footer_style li {
+    display: inline-block;
+    width: auto;
+    height: auto; }
 
   .footer_style2 {
     text-align: center;
