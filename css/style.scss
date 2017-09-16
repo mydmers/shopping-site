@@ -93,7 +93,11 @@ $shopping_guide_font : #756c56;
     
     li{
       display: inline;
-      color: #756c56; 
+
+      a {
+        color:#756c56;
+        text-decoration:none;
+      }
     }
   }
 //breadcrumbs end sp
@@ -229,23 +233,7 @@ figcaption {
     width:80%;
   }
 //input.type end sp
-//side_menu start_sp
-
-  .side_color{
-    width:100%;
-    color:white;
-    margin-top:5px;
-    margin-right:0px;
-    margin-left:0px;
-    margin-bottom:0px;
-    padding: 10px;
-  }
-  
-  .side_menu_ttl{
-    background-color:#857e6a;
-    height:auto;
-    }
-
+//side_menu start sp
 
 ul.side_menu_toggle1 {
   display: none;
@@ -253,10 +241,10 @@ ul.side_menu_toggle1 {
   li{
    	 background:white;
    	 margin-top: 0px;
-   	 margin-bottom: 0px;
-   	 padding-top: 10px;
-   	 padding-bottom: 0px;
-   	 height: 20px;
+   	 margin-bottom:0px;
+   	 padding-top:10px;
+   	 padding-bottom:0px;
+   	 height:20px;
 
     a{
       color:black;
@@ -282,6 +270,23 @@ ul.side_menu_toggle2 {
       }
     }
   }
+
+  .side_color{
+    background-color: #857e6a;
+    width:100%;
+    color:white;
+    margin-top:2px;
+    margin-right:0px;
+    margin-left:0px;
+    }
+
+  .side_color.a {
+    text-decoration:blink;
+    width:100%;
+    margin:2px 0 0 0;
+    margin-right:0px;
+    margin-left:0px;
+    }
     
   figure.caption_style{
     width:100%;
@@ -298,7 +303,7 @@ ul.side_menu_toggle2 {
       text-align:center;
       float:left;
       }
-    }
+  }
 //side_menu end sp
 //sidebar end sp
 //products.html start sp
@@ -664,23 +669,17 @@ figcaption {
     width:80%;
   }
 //input.type end pc
-//side_menu start_pc
+//side_menu start pc
 
   .side_color{
+    background-color: #857e6a;
     width:100%;
     color:white;
     margin-top:5px;
     margin-right:0px;
     margin-left:0px;
     margin-bottom:0px;
-    padding: 10px;
-  }
-    
-  .side_menu_ttl{
-    background-color: #857e6a;
-    height:10px;
-    }
-
+    padding: 0px 0px 0px 0px;
 
   ul.side_menu_toggle1 {
   	display: none;
@@ -688,10 +687,10 @@ figcaption {
   	li{
    	 background:white;
    	 margin-top: 0px;
-   	 margin-bottom: 0px;
-   	 padding-top: 10px;
-   	 padding-bottom: 0px;
-   	 height: 20px;
+   	 margin-bottom:0px;
+   	 padding-top:10px;
+   	 padding-bottom:0px;
+   	 height:20px;
 
     a{
       color:black;
@@ -740,6 +739,8 @@ figcaption {
       height:auto;
       }
     }
+    
+  }
 //side_menu end pc
 //sidebar end pc
 //products.html start pc
