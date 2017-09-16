@@ -53,7 +53,7 @@ $shopping_guide_font : #756c56;
       }
     
     
-//  .menu_sp_toggle start
+//  .menu_sp_toggle start sp
   .menu_sp_toggle {
 //    width: 180px;
 //    position: absolute;
@@ -84,7 +84,7 @@ $shopping_guide_font : #756c56;
 }
 //header end
 
-//breadcrumbs start
+//breadcrumbs start sp
   .breadcrumbs {
     background-color: #e1ddd0;
     list-style-type:none;
@@ -96,12 +96,12 @@ $shopping_guide_font : #756c56;
       color: #756c56; 
     }
   }
-//breadcrumbs end
+//breadcrumbs end sp
 
 
-//cover start
+//cover start sp
   .cover_area{
-    margin:2%;
+    margin:0%;
     }
     
   .cover_area_pc {
@@ -121,7 +121,7 @@ $shopping_guide_font : #756c56;
     -ms-interpolation-mode: bicubic;
     }
  
-//items start 
+//items start sp
   #items{
 
     .items_ttl{
@@ -146,9 +146,9 @@ $shopping_guide_font : #756c56;
       
       }
     }
-//items end
+//items end sp
 
-//figure start
+//figure start sp
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
 figure {
     display: table;
@@ -172,9 +172,9 @@ figcaption {
     text-align: left;      /* 中身をセンタリング */
     margin:2px;
     }
-//figure end
+//figure end sp
 
-//shopping_guide start      
+//shopping_guide start sp
   #shopping_guide {
     background-color: #F8F8FF;//GhostWhite;
     position:relative;
@@ -194,12 +194,12 @@ figcaption {
     }
   
   #guide_setting{
-    background:#F8F8FF;//GhostWhite;
+    background-color:#fff;//White;
     width:300px;
     }
   
   #guide_setting2{
-    background:#F8F8FF;//GhostWhite;
+    background-color:#fff;//White;
     width:300px;
     }
 //shopping_guide end sp
@@ -299,9 +299,9 @@ ul.side_menu_toggle2 {
       float:left;
       }
     }
-//side_menu end
-//sidebar end
-//------------------products.html start sp------------------
+//side_menu end sp
+//sidebar end sp
+//products.html start sp
 .product_start {
   margin-right: 0px;
   margin-left: 0px;
@@ -491,32 +491,40 @@ div.arrow_style{
     }
   
   }
-//header end
+//header end pc
 
-//breadcrumbs start
+//breadcrumbs start pc
   .breadcrumbs {
+    max-width:700px;
     background-color: #e1ddd0;
     list-style-type:none;
+    padding:0px;
+    border-radius:3px;
     
     li{
       display: inline;
-      color:#756c56;
+      
+      a {
+        color:#756c56;
+        text-decoration:none;
+      }
     }
   }
-//breadcrumbs end
+//breadcrumbs end pc
 
-//cover start
+//cover start pc
   .cover_area {
-    width:600px;
-    margin-right:auto;
-    margin-left:auto;
+    max-width: 740px;
+    margin: 0px;
+    padding: 0px;
   }
   
-  .cover_area_pc {
-    display:block;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
+  img.cover_area_pc {
+    max-width: 100%;
+    width:auto;
+    height:auto;
+    margin: 0 0 20px 0;
+    padding: 0px;
   }
   
   .cover_area_sp {
@@ -524,7 +532,7 @@ div.arrow_style{
   }
 	
 	.u-max-full-width {
-    max-width: 100%;
+    max-width: 740px;
     box-sizing: border-box;
     }
 
@@ -580,7 +588,7 @@ figcaption {
     text-align: left;
     padding:5px;
     }   
-//figure end  
+//figure end pc
      
 //shopping_guide start pc
   #shopping_guide {
@@ -593,14 +601,13 @@ figcaption {
     }
   
   #guide_setting{
-    background-color: #fff;//White
+    background-color: #FFFFFF;//White
     width:50%;
-    height:auto;
-    position:absolute;
-    top:0px;
-    left:0px;
-    padding: 0 20px;
-
+    height:20em;
+    float:left;
+    margin:0;
+    padding:0;
+    
     dt.shopping_guide_font {
       color: $shopping_guide_font;
     }
@@ -612,12 +619,12 @@ figcaption {
     }
   
   #guide_setting2{
-    background: #fff;//White
-    position:absolute;
+    background-color: #FFFFFF;//White
     width:50%;
-    height:auto;
-    top:0px;
-    right:0px;
+    height:20em;
+    float:right;
+    margin:0;
+    padding:0;
     
     dt.shopping_guide_font {
       color: $shopping_guide_font;
@@ -735,7 +742,7 @@ figcaption {
     }
 //side_menu end pc
 //sidebar end pc
-//------------------products.html start pc------------------
+//products.html start pc
 .product_start {
   margin-right: 8%;
   margin-left: 8%;
@@ -835,8 +842,8 @@ table {
 .c2 {
   border:1px #D3D3D3 solid;
 }
-//table end
-//------------------products.html end pc------------------
+//table end pc
+//products.html end pc
 
 .btn {
     font-size:12px;
@@ -873,7 +880,7 @@ div.arrow_style{
 
 
 .footer_style{
-//  text-align:center;
+  text-align:center;
   
   li{
     display:inline-block;

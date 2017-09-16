@@ -48,7 +48,7 @@ html {
       color: #756c56; }
 
   .cover_area {
-    margin: 2%; }
+    margin: 0%; }
 
   .cover_area_pc {
     display: none; }
@@ -118,11 +118,11 @@ html {
         height: auto; }
 
   #guide_setting {
-    background: #F8F8FF;
+    background-color: #fff;
     width: 300px; }
 
   #guide_setting2 {
-    background: #F8F8FF;
+    background-color: #fff;
     width: 300px; }
 
   .side_style {
@@ -331,28 +331,34 @@ html {
         color: #42b9d0; }
 
   .breadcrumbs {
+    max-width: 700px;
     background-color: #e1ddd0;
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0px;
+    border-radius: 3px; }
     .breadcrumbs li {
-      display: inline;
-      color: #756c56; }
+      display: inline; }
+      .breadcrumbs li a {
+        color: #756c56;
+        text-decoration: none; }
 
   .cover_area {
-    width: 600px;
-    margin-right: auto;
-    margin-left: auto; }
+    max-width: 740px;
+    margin: 0px;
+    padding: 0px; }
 
-  .cover_area_pc {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
+  img.cover_area_pc {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 0 20px 0;
+    padding: 0px; }
 
   .cover_area_sp {
     display: none; }
 
   .u-max-full-width {
-    max-width: 100%;
+    max-width: 740px;
     box-sizing: border-box; }
 
   #items .items_ttl {
@@ -406,13 +412,12 @@ html {
     margin-right: auto; }
 
   #guide_setting {
-    background-color: #fff;
+    background-color: #FFFFFF;
     width: 50%;
-    height: auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 0 20px; }
+    height: 20em;
+    float: left;
+    margin: 0;
+    padding: 0; }
     #guide_setting dt.shopping_guide_font {
       color: #756c56; }
     #guide_setting dd img {
@@ -420,12 +425,12 @@ html {
       height: auto; }
 
   #guide_setting2 {
-    background: #fff;
-    position: absolute;
+    background-color: #FFFFFF;
     width: 50%;
-    height: auto;
-    top: 0px;
-    right: 0px; }
+    height: 20em;
+    float: right;
+    margin: 0;
+    padding: 0; }
     #guide_setting2 dt.shopping_guide_font {
       color: #756c56; }
     #guide_setting2 dd img {
@@ -613,10 +618,12 @@ html {
   div.arrow_style {
     text-align: right; }
 
-  .footer_style li {
-    display: inline-block;
-    width: auto;
-    height: auto; }
+  .footer_style {
+    text-align: center; }
+    .footer_style li {
+      display: inline-block;
+      width: auto;
+      height: auto; }
 
   .footer_style2 {
     text-align: center;
