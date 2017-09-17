@@ -161,7 +161,7 @@ figure {
     margin:2px;
     }
     
-/* ▼画像に対する装飾 */
+/* ▼画像に対する装飾 */sp
 figure.img {
       display: block;          /* 余計な余白が出ないようにする */
       margin: 0px; /* 周りに2pxの余白を追加 */
@@ -170,7 +170,7 @@ figure.img {
     }
 
   
-/* ▼キャプションに対する装飾 */
+/* ▼キャプションに対する装飾 */sp
 figcaption {
     font-size: 0.9em;        /* 文字サイズを90%に */
     text-align: left;      /* 中身をセンタリング */
@@ -258,8 +258,7 @@ ul.side_menu_toggle1 {
    	 background:white;
    	 margin-top: 0px;
    	 margin-bottom:0px;
-   	 padding-top:10px;
-   	 padding-bottom:0px;
+   	 padding: 10px 0 0 10px;
    	 height:20px;
 
     a{
@@ -276,8 +275,7 @@ ul.side_menu_toggle2 {
    	 background:white;
    	 margin-top: 0px;
    	 margin-bottom:0px;
-   	 padding-top:10px;
-   	 padding-bottom:0px;
+   	 padding: 10px 0 0 10px;
    	 height:20px;
 
     a{
@@ -379,9 +377,20 @@ table{
 .c2 {
   border:1px #D3D3D3 solid;
 }
+
+.c3{
+    color:#756c56;
+  }
+
+.product_table {
+  text-align:left;
+  font-size:12px;
+  filter:alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  }
+
 //table end sp
-
-
 //products.html end sp
 
 .btn {
@@ -436,7 +445,7 @@ div.arrow_style{
   filter:alpha(opacity=60);
   -moz-opacity: 0.6;
   opacity: 0.6;
-}
+  }
 //footer_style end sp
 
 }
@@ -578,29 +587,30 @@ div.arrow_style{
     }
 //items end pc
 
-//figure start pc
+//figure start pc_9columns
 /* ▼キャプション付き画像全体を囲むボックスの装飾 */
-figure {
-  display:inline-block;
-  margin: 10px;
-  }    
-/* ▼画像に対する装飾 */
-  figure.caption_style img {
-    display: block;          /* 余計な余白が出ないようにする */
-    margin: 20px; /* 周りに2pxの余白を追加 */
-    width: 180px;
-    text-align:center;
-  }
+    figure {
+       display:inline-block;
+       margin: 10px;
+          
+    .caption_style1 {
+        img {
+            display: block; /* 余計な余白が出ないようにする */
+            margin: 20px; /* 周りに2pxの余白を追加 */
+            width: 180px;
+            text-align:center;
+            }
 
-/* ▼キャプションに対する装飾 */
-figcaption {
-    font-size: 0.9em;        /* 文字サイズを90%に */
-    text-align: center;      /* 中身をセンタリング */
-    margin:0px;
-    text-align: left;
-    padding:5px;
-    }   
-//figure end pc
+        figcaption {
+            font-size: 0.9em;        /* 文字サイズを90%に */
+            margin:0px;
+            text-align: left;
+            padding:5px;
+            }
+        }
+    } 
+ 
+//figure end pc_9columns
      
 //shopping_guide start pc
   #shopping_guide {
@@ -684,11 +694,7 @@ figcaption {
     background-color: #857e6a;
     width:100%;
     color:white;
-    margin-top:10px;
-    margin-right:0px;
-    margin-left:0px;
-    margin-bottom:0px;
-    padding: 0px 0px 0px 0px;
+    margin: 10px 0px;
     font-size:1.1em;
     line-height:40px;
 
@@ -697,10 +703,8 @@ figcaption {
 
   	li{
    	 background:white;
-   	 margin-top: 0px;
-   	 margin-bottom:0px;
-   	 padding-top:10px;
-   	 padding-bottom:10px;
+   	 margin:0;
+   	 padding: 10px 0px 20px 20px;
    	 height:20px;
 
     a{
@@ -712,45 +716,42 @@ figcaption {
   }
 
   ul.side_menu_toggle2 {
- 	 display: none;
-  
- 	li{
+  	display: none;
+
+  	li{
    	 background:white;
-   	 margin-top: 0px;
-   	 margin-bottom:0px;
-   	 padding-top:10px;
-   	 padding-bottom:10px;
+   	 margin:0;
+   	 padding: 10px 0px 20px 20px;
    	 height:20px;
 
     a{
       color:black;
       text-decoration:none;
+      padding-left:0px;
       }
     }
   }
 
-  figure.caption_style{
-  	width:auto;
+//figure start pc_3columns
+
+  figure.caption_style2 {
+  	width:100%;
     height:auto;
     background:white;
     color:black;
-    margin-top:2px;
-    margin-right:0px;
-    margin-left:0px;
-    margin-bottom:0px;
-    
-  figcaption {
-    text-align:left;
-  }
+    margin:2px 0px;
     
     img {
       margin-right:auto;
       margin-left:auto;
-      margin-top:10px;
-      width:auto;
-      height:auto;
+       }
+
+    figcaption {
+      text-align:left;
       }
+    
     }
+//figure end pc_3columns
     
   }
 //side_menu end pc
@@ -850,15 +851,23 @@ table {
 
 .c1{
    background-color: #f6f6f2
-}
+  }
 
 .c2 {
   border:1px #D3D3D3 solid;
-}
+  }
 
 .c3{
     color:#756c56;
-}
+  }
+  
+.product_table {
+  text-align:left;
+  font-size:12px;
+  filter:alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  }
 
 //table end pc
 //products.html end pc
@@ -929,7 +938,7 @@ div.arrow_style{
   filter:alpha(opacity=60);
   -moz-opacity: 0.6;
   opacity: 0.6;
-}
+  }
 
 //footer_style end pc
 
