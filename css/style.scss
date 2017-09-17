@@ -395,13 +395,13 @@ table{
     color:white;
     border:1px solid #333;
     margin:inherit;
-}
+    }
 
 img.t2_left {
     padding-left:25px;
     padding-top:0;
     display:inline;
-  }
+    }
   
 img.t2_right{
     padding-top:15px;      
@@ -855,12 +855,17 @@ table {
 .c2 {
   border:1px #D3D3D3 solid;
 }
+
+.c3{
+    color:#756c56;
+}
+
 //table end pc
 //products.html end pc
 
 .btn {
-    font-size:12px;
-    font-weight:normal;
+    font-size:16px;
+    font-weight:bold;
     text-decoration:none;
     display:block;
     text-align:center;
@@ -869,6 +874,7 @@ table {
     color:white;
     border:1px solid #333;
     margin:inherit;
+    width: 5em;
 }
 
 img.t2_left {
@@ -881,6 +887,18 @@ img.t2_right{
     padding-top:15px;      
   float:right;
 }
+
+
+a.t2_left {
+//    padding:20px;
+    float:left;
+  }
+  
+a.t2_right{
+//    padding:20px;
+    float:right;
+}
+
   
 .t2_right:after{
   content: '';
