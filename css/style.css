@@ -109,7 +109,7 @@ html {
   #shopping_guide {
     background-color: #F8F8FF;
     position: relative;
-    width: 300px;
+    width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto; }
@@ -121,11 +121,14 @@ html {
 
   #guide_setting {
     background-color: #fff;
-    width: 300px; }
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 10px; }
 
   #guide_setting2 {
     background-color: #fff;
-    width: 300px; }
+    width: 100%;
+    padding: 30px; }
 
   .side_style {
     background: white; }
@@ -145,6 +148,18 @@ html {
     background-repeat: no-repeat;
     background-position: center right;
     width: 80%; }
+
+  .side_color {
+    background-color: #857e6a;
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 1.1em;
+    line-height: 40px; }
 
   ul.side_menu_toggle1 {
     display: none; }
@@ -171,21 +186,6 @@ html {
       ul.side_menu_toggle2 li a {
         color: black;
         text-decoration: none; }
-
-  .side_color {
-    background-color: #857e6a;
-    width: 100%;
-    color: white;
-    margin-top: 2px;
-    margin-right: 0px;
-    margin-left: 0px; }
-
-  .side_color.a {
-    text-decoration: blink;
-    width: 100%;
-    margin: 2px 0 0 0;
-    margin-right: 0px;
-    margin-left: 0px; }
 
   figure.caption_style {
     width: 100%;
@@ -221,19 +221,18 @@ html {
     font-size: 14; }
 
   #display_img img {
-    width: 300px;
-    margin-top: 1%;
-    margin-right: 1%;
+    width: 450px;
+    margin-top: 5px;
+    margin: 5px;
     padding: 0px;
     float: left; }
 
   #list_img li {
-    margin: 1%;
     list-style: none; }
 
   #list_img li img {
-    margin: 1%;
-    width: 50px;
+    padding: 6px;
+    width: 80px;
     float: left;
     cursor: pointer; }
 
@@ -255,6 +254,9 @@ html {
   .c1 {
     background-color: #f6f6f2; }
 
+  .c2 {
+    border: 1px #D3D3D3 solid; }
+
   .btn {
     font-size: 12px;
     font-weight: normal;
@@ -267,10 +269,13 @@ html {
     border: 1px solid #333;
     margin: inherit; }
 
-  .t2_left {
+  img.t2_left {
+    padding-left: 25px;
+    padding-top: 0;
     display: inline; }
 
-  .t2_right {
+  img.t2_right {
+    padding-top: 15px;
     float: right; }
 
   .t2_right:after {
@@ -474,9 +479,7 @@ html {
     margin-bottom: 0px;
     padding: 0px 0px 0px 0px;
     font-size: 1.1em;
-    height: auto;
-    line-height: 30px;
-    vertical-align: middle; }
+    line-height: 40px; }
     .side_color ul.side_menu_toggle1 {
       display: none; }
       .side_color ul.side_menu_toggle1 li {
@@ -611,9 +614,11 @@ html {
 
   img.t2_left {
     padding-left: 25px;
+    padding-top: 0;
     display: inline; }
 
-  .t2_right {
+  img.t2_right {
+    padding-top: 15px;
     float: right; }
 
   .t2_right:after {

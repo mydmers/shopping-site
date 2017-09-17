@@ -182,7 +182,7 @@ figcaption {
   #shopping_guide {
     background-color: #F8F8FF;//GhostWhite;
     position:relative;
-    width:300px;
+    width:90%;
     height:auto;
     margin-left:auto;
     margin-right:auto;
@@ -199,12 +199,15 @@ figcaption {
   
   #guide_setting{
     background-color:#fff;//White;
-    width:300px;
+    width:100%;
+    padding:30px;
+    margin-bottom:10px;
     }
   
   #guide_setting2{
     background-color:#fff;//White;
-    width:300px;
+    width:100%;
+    padding:30px;
     }
 //shopping_guide end sp
 //sidebar start sp
@@ -234,6 +237,19 @@ figcaption {
   }
 //input.type end sp
 //side_menu start sp
+
+  .side_color{
+    background-color: #857e6a;
+    width:100%;
+    color:white;
+    margin-top:10px;
+    margin-right:0px;
+    margin-left:0px;
+    margin-bottom:0px;
+    padding:0px;
+    font-size:1.1em;
+    line-height:40px;
+    }
 
 ul.side_menu_toggle1 {
   display: none;
@@ -271,22 +287,7 @@ ul.side_menu_toggle2 {
     }
   }
 
-  .side_color{
-    background-color: #857e6a;
-    width:100%;
-    color:white;
-    margin-top:2px;
-    margin-right:0px;
-    margin-left:0px;
-    }
 
-  .side_color.a {
-    text-decoration:blink;
-    width:100%;
-    margin:2px 0 0 0;
-    margin-right:0px;
-    margin-left:0px;
-    }
     
   figure.caption_style{
     width:100%;
@@ -330,21 +331,20 @@ ul.side_menu_toggle2 {
 }
 
 #display_img img {
-  width: 300px;
-  margin-top:1%;
-  margin-right:1%;
+  width: 450px;
+  margin-top:5px;
+  margin: 5px;
   padding:0px;
   float:left;
 }
 
 #list_img li {
-  margin:1%;
   list-style:none;
   }
 
 #list_img li img {
-    margin:1%;
-    width: 50px;
+    padding:6px;
+    width: 80px;
     float:left;
     cursor: pointer;
   }
@@ -375,10 +375,14 @@ table{
 .c1{
    background-color: #f6f6f2
 }
-//table end
+
+.c2 {
+  border:1px #D3D3D3 solid;
+}
+//table end sp
 
 
-//------------------products.html end sp------------------
+//products.html end sp
 
 .btn {
     font-size:12px;
@@ -393,11 +397,14 @@ table{
     margin:inherit;
 }
 
-.t2_left {
+img.t2_left {
+    padding-left:25px;
+    padding-top:0;
     display:inline;
   }
   
-.t2_right{
+img.t2_right{
+    padding-top:15px;      
   float:right;
 }
   
@@ -642,9 +649,6 @@ figcaption {
   }
 //shopping_guide end pc
 //sidebar start pc
-//.side_style{
-//  background:white;
-//}
 
 //input.type start pc
   .input_image {
@@ -686,9 +690,7 @@ figcaption {
     margin-bottom:0px;
     padding: 0px 0px 0px 0px;
     font-size:1.1em;
-    height:auto;
-    line-height:30px;
-    vertical-align:middle;
+    line-height:40px;
 
   ul.side_menu_toggle1 {
   	display: none;
@@ -871,10 +873,12 @@ table {
 
 img.t2_left {
     padding-left:25px;
+    padding-top:0;
     display:inline;
   }
   
-.t2_right{
+img.t2_right{
+    padding-top:15px;      
   float:right;
 }
   
