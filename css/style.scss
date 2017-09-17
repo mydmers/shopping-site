@@ -642,23 +642,28 @@ figcaption {
   }
 //shopping_guide end pc
 //sidebar start pc
-.side_style{
-  background:white;
-}
+//.side_style{
+//  background:white;
+//}
 
 //input.type start pc
-  img.input_image {
+  .input_image {
     margin-left:5%;
     margin-top:10%;
     margin-bottom:0;
+    padding-top:15px;
+    background-color:white;
   }
   
   #search{
     text-align: center;
+    background-color:white;
+    margin-bottom:2px;
+    padding-bottom:15px;
   }
     
   input{
-    margin-bottom:2px;
+    margin-bottom:0px;
     }
 
   input.input_type{
@@ -675,11 +680,15 @@ figcaption {
     background-color: #857e6a;
     width:100%;
     color:white;
-    margin-top:5px;
+    margin-top:10px;
     margin-right:0px;
     margin-left:0px;
     margin-bottom:0px;
     padding: 0px 0px 0px 0px;
+    font-size:1.1em;
+    height:auto;
+    line-height:30px;
+    vertical-align:middle;
 
   ul.side_menu_toggle1 {
   	display: none;
@@ -689,12 +698,13 @@ figcaption {
    	 margin-top: 0px;
    	 margin-bottom:0px;
    	 padding-top:10px;
-   	 padding-bottom:0px;
+   	 padding-bottom:10px;
    	 height:20px;
 
     a{
       color:black;
       text-decoration:none;
+      padding-left:0px;
       }
     }
   }
@@ -707,7 +717,7 @@ figcaption {
    	 margin-top: 0px;
    	 margin-bottom:0px;
    	 padding-top:10px;
-   	 padding-bottom:0px;
+   	 padding-bottom:10px;
    	 height:20px;
 
     a{
@@ -859,7 +869,8 @@ table {
     margin:inherit;
 }
 
-.t2_left {
+img.t2_left {
+    padding-left:25px;
     display:inline;
   }
   

@@ -441,19 +441,21 @@ html {
       width: 200px;
       height: auto; }
 
-  .side_style {
-    background: white; }
-
-  img.input_image {
+  .input_image {
     margin-left: 5%;
     margin-top: 10%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-top: 15px;
+    background-color: white; }
 
   #search {
-    text-align: center; }
+    text-align: center;
+    background-color: white;
+    margin-bottom: 2px;
+    padding-bottom: 15px; }
 
   input {
-    margin-bottom: 2px; }
+    margin-bottom: 0px; }
 
   input.input_type {
     background-color: #D3D3D3;
@@ -466,11 +468,15 @@ html {
     background-color: #857e6a;
     width: 100%;
     color: white;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
-    padding: 0px 0px 0px 0px; }
+    padding: 0px 0px 0px 0px;
+    font-size: 1.1em;
+    height: auto;
+    line-height: 30px;
+    vertical-align: middle; }
     .side_color ul.side_menu_toggle1 {
       display: none; }
       .side_color ul.side_menu_toggle1 li {
@@ -478,11 +484,12 @@ html {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
-        padding-bottom: 0px;
+        padding-bottom: 10px;
         height: 20px; }
         .side_color ul.side_menu_toggle1 li a {
           color: black;
-          text-decoration: none; }
+          text-decoration: none;
+          padding-left: 0px; }
     .side_color ul.side_menu_toggle2 {
       display: none; }
       .side_color ul.side_menu_toggle2 li {
@@ -490,7 +497,7 @@ html {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
-        padding-bottom: 0px;
+        padding-bottom: 10px;
         height: 20px; }
         .side_color ul.side_menu_toggle2 li a {
           color: black;
@@ -602,7 +609,8 @@ html {
     border: 1px solid #333;
     margin: inherit; }
 
-  .t2_left {
+  img.t2_left {
+    padding-left: 25px;
     display: inline; }
 
   .t2_right {
