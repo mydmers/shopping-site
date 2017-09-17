@@ -692,6 +692,7 @@ div.arrow_style{
 
   .side_color{
     background-color: #857e6a;
+    border-color:white;
     width:100%;
     color:white;
     margin: 10px 0px;
@@ -734,20 +735,20 @@ div.arrow_style{
 
 //figure start pc_3columns
 
-  figure.caption_style2 {
-  	width:100%;
-    height:auto;
+  figure.caption_style2{
     background:white;
     color:black;
     margin:2px 0px;
     
     img {
-      margin-right:auto;
-      margin-left:auto;
+      display:block;
+      margin:10px auto 1px auto;
        }
 
     figcaption {
       text-align:left;
+      padding:10px;
+      line-height:1.5em;
       }
     
     }

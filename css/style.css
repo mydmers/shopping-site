@@ -475,6 +475,7 @@ html {
 
   .side_color {
     background-color: #857e6a;
+    border-color: white;
     width: 100%;
     color: white;
     margin: 10px 0px;
@@ -503,16 +504,16 @@ html {
           text-decoration: none;
           padding-left: 0px; }
     .side_color figure.caption_style2 {
-      width: 100%;
-      height: auto;
       background: white;
       color: black;
       margin: 2px 0px; }
       .side_color figure.caption_style2 img {
-        margin-right: auto;
-        margin-left: auto; }
+        display: block;
+        margin: 10px auto 1px auto; }
       .side_color figure.caption_style2 figcaption {
-        text-align: left; }
+        text-align: left;
+        padding: 10px;
+        line-height: 1.5em; }
 
   .product_start {
     margin-right: 8%;
