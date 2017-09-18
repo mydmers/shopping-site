@@ -6,7 +6,9 @@ html {
   body {
     margin: 5px 10px 5px 10px;
     background-color: #f8f8f6;
-    width: 500px; }
+    width: 500px;
+    margin: 0px;
+    padding: 10px; }
 
   header #header_in {
     padding-top: 10px;
@@ -71,14 +73,24 @@ html {
 
   ul.items_list {
     display: block;
-    width: 400px;
-    margin-right: auto;
-    margin-left: auto; }
+    width: 100%;
+    margin: 0px;
+    background-color: #ffffff; }
     ul.items_list li {
       display: inline-block;
       width: 50%;
       float: left;
-      background: #fff; }
+      background: #fff;
+      margin: 0px; }
+      ul.items_list li figure.caption_style1 {
+        width: 100%;
+        margin: 0px; }
+        ul.items_list li figure.caption_style1 img {
+          margin: 0;
+          padding: 20px 20px 5px 20px; }
+        ul.items_list li figure.caption_style1 figcaption {
+          margin: 0;
+          padding: 5px 21px 20px 21px; }
 
   /* ▼キャプション付き画像全体を囲むボックスの装飾 */
   figure {

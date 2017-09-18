@@ -27,6 +27,8 @@ $shopping_guide_font : #756c56;
     margin: 5px 10px 5px 10px;
     background-color: #f8f8f6;
     width: 500px;
+    margin:0px;
+    padding:10px;
     }
     
   	header{
@@ -135,17 +137,32 @@ $shopping_guide_font : #756c56;
        
     ul.items_list{
       display:block;
-      width:400px;
-      margin-right:auto;
-      margin-left:auto;
+      width:100%;
+      margin:0px;
+      background-color:#ffffff;
 
       li{
         display:inline-block;
         width:50%;
         float:left;
         background: #fff;
+        margin:0px;
         
+        figure.caption_style1{
+            width:100%;
+            margin:0px;
+            
+        img {
+            margin:0;
+            padding: 20px 20px 5px 20px;
+            }
+            
+        figcaption {
+            margin:0;
+            padding: 5px 21px 20px 21px;
+            }
         }
+    }
       
       }
 //    }
